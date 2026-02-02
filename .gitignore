@@ -4,3 +4,4 @@ node_modules
 .env*.local
 tsconfig.tsbuildinfo
 .playwright-mcp
+.vercel
