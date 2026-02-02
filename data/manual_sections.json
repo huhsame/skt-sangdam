@@ -1,0 +1,1449 @@
+{
+  "metadata": {
+    "title": "SKT 고객센터 상담 매뉴얼",
+    "version": "2025.01",
+    "last_updated": "2025-01-15",
+    "company": "SK텔레콤",
+    "classification": "대외비",
+    "scope": "모바일 통신 서비스 상담"
+  },
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "상담 기본",
+      "page_range": "1~4",
+      "sections": [
+        {
+          "id": "s1.1",
+          "title": "상담원 기본 수칙 및 응대 매너",
+          "keywords": ["기본수칙", "응대매너", "금지행위", "호칭", "어조"],
+          "content": {
+            "five_rules": [
+              "경청 우선: 고객의 말을 끊지 않고 끝까지 경청한다.",
+              "정확한 안내: 추측이나 개인 의견이 아닌, 정책과 시스템 기준으로 안내한다.",
+              "개인정보 보호: 고객 정보를 불필요하게 열람하거나 외부에 유출하지 않는다.",
+              "신속한 처리: 가능한 업무는 즉시 처리하며, 불가한 경우 명확한 사유와 대안을 안내한다.",
+              "기록 철저: 모든 상담 내역은 시스템에 정확히 기록한다."
+            ],
+            "manner_guidelines": {
+              "호칭": "고객님으로 통일. 이름 확인 후 ○○○ 고객님 사용 가능",
+              "어조": "밝고 차분한 톤 유지. 지나친 높임이나 반말 금지",
+              "속도": "고객이 이해할 수 있는 속도로 천천히 안내",
+              "전문용어": "가급적 쉬운 용어로 풀어서 설명",
+              "대기시": "30초 이상 대기 시 중간 안내 필수",
+              "감정대응": "고객이 격앙된 경우 공감 표현 후 해결 방안 제시"
+            },
+            "prohibited_actions": [
+              "고객과의 언쟁 또는 감정적 대응",
+              "타 통신사 비방 또는 비교 폄하",
+              "확인되지 않은 정보 안내",
+              "상담 중 개인 업무 처리",
+              "고객 정보의 무단 조회 또는 메모"
+            ]
+          }
+        },
+        {
+          "id": "s1.2",
+          "title": "전화 응대 표준 멘트",
+          "keywords": ["인사멘트", "대기멘트", "전환멘트", "종료멘트", "표준멘트"],
+          "content": {
+            "greeting": {
+              "inbound": "감사합니다, SK텔레콤 [상담원 이름]입니다. 무엇을 도와드릴까요?",
+              "outbound": "안녕하세요, SK텔레콤 고객센터 [상담원 이름]입니다. ○○○ 고객님 되시나요? 잠시 통화 가능하실까요?"
+            },
+            "hold": {
+              "request": "확인을 위해 잠시만 기다려 주시겠습니까?",
+              "return": "기다려 주셔서 감사합니다. 확인 결과 안내 드리겠습니다.",
+              "long_wait": "확인이 조금 더 필요합니다. 잠시만 더 기다려 주시겠습니까?"
+            },
+            "transfer": {
+              "normal": "해당 문의는 전문 상담 부서에서 더 정확한 안내가 가능합니다. 담당 부서로 연결해 드리겠습니다.",
+              "failed": "연결이 원활하지 않아 죄송합니다. 담당 부서에서 고객님께 직접 연락드리도록 접수하겠습니다."
+            },
+            "closing": {
+              "normal": "안내 드린 내용 외에 추가로 궁금하신 사항이 있으신가요? 감사합니다. 좋은 하루 되세요.",
+              "complaint": "불편을 드려 죄송합니다. 말씀하신 내용은 반드시 반영하겠습니다. 추가 문의 사항이 있으시면 언제든 연락 주세요."
+            }
+          }
+        },
+        {
+          "id": "s1.3",
+          "title": "본인확인 절차",
+          "keywords": ["본인확인", "명의자확인", "대리인", "위임장", "미성년자", "신분증"],
+          "content": {
+            "identity_verification": {
+              "required_items": "3가지 중 2가지 이상 일치: 생년월일(주민번호 앞6자리), 연락처(가입시 등록), 주소(청구지/자택)",
+              "additional_items": "민감 업무 시: 최근 3개월 납부금액, 가입회선번호, 비밀번호(4자리)"
+            },
+            "proxy_requirements": {
+              "가족대리": {
+                "documents": "위임장 + 명의자 신분증 사본 + 대리인 신분증",
+                "note": "가족관계증명서 추가 필요 시 있음"
+              },
+              "법인대리": {
+                "documents": "재직증명서 + 법인인감증명서 + 위임장 + 대리인 신분증",
+                "note": "법인 직인 필수"
+              },
+              "미성년자": {
+                "documents": "법정대리인(부모) 신분증 + 가족관계증명서",
+                "note": "법정대리인 동의 필수"
+              }
+            },
+            "verification_failed": {
+              "simple_inquiry": "부분 안내 가능 (끝 4자리 마스킹 처리)",
+              "sensitive_tasks": "절대 불가 → 본인 직접 방문 안내",
+              "alternative": "T월드 앱/웹 본인인증 후 처리 권유"
+            }
+          }
+        },
+        {
+          "id": "s1.4",
+          "title": "개인정보 보호 및 고객정보 조회 기준",
+          "keywords": ["개인정보", "정보보호", "조회기준", "정보유출"],
+          "content": {
+            "principles": [
+              "목적 내 이용: 상담 목적에 필요한 최소한의 정보만 조회",
+              "조회 기록 관리: 모든 조회는 시스템에 자동 로그 기록",
+              "화면 잠금: 자리 이석 시 반드시 화면 잠금",
+              "출력물 관리: 고객 정보 출력 시 당일 파쇄 처리"
+            ],
+            "access_scope": {
+              "가입요금제": { "allowed": true, "condition": "본인확인 후" },
+              "월청구요금": { "allowed": true, "condition": "본인확인 후" },
+              "통화내역CDR": { "allowed": "conditional", "condition": "본인확인 + 별도 동의 (최근 6개월)" },
+              "위치정보": { "allowed": false, "condition": "법원 영장 등 법적 절차 필요" },
+              "주민등록번호전체": { "allowed": false, "condition": "어떤 경우에도 안내 불가" }
+            },
+            "incident_response": [
+              "즉시 팀장에게 보고",
+              "정보보호팀(내선 9119) 긴급 신고",
+              "사고 경위 서면 작성",
+              "피해 고객 통지 (정보보호팀 지시에 따름)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ch02",
+      "title": "요금제 안내 및 변경",
+      "page_range": "5~12",
+      "sections": [
+        {
+          "id": "s2.1",
+          "title": "5G 요금제 라인업",
+          "keywords": ["5G", "요금제", "플래티넘", "프라임", "스탠다드", "슬림", "다이렉트", "무제한"],
+          "content": {
+            "premium": [
+              {
+                "name": "5G 플래티넘",
+                "monthly_fee": 125000,
+                "data": "무제한(완전무제한)",
+                "voice": "무제한",
+                "sms": "무제한",
+                "benefits": "T우주 프리미엄, TMAP 프리미엄, FLO 무제한 포함"
+              },
+              {
+                "name": "5G 프라임 플러스",
+                "monthly_fee": 105000,
+                "data": "무제한(일 100GB 후 5Mbps)",
+                "voice": "무제한",
+                "sms": "무제한",
+                "benefits": "T우주 스탠다드, TMAP 기본 포함"
+              },
+              {
+                "name": "5G 프라임",
+                "monthly_fee": 89000,
+                "data": "무제한(일 50GB 후 5Mbps)",
+                "voice": "무제한",
+                "sms": "무제한",
+                "benefits": "T우주 라이트 포함"
+              }
+            ],
+            "standard": [
+              {
+                "name": "5G 스탠다드",
+                "monthly_fee": 72000,
+                "data": "무제한(일 10GB 후 5Mbps)",
+                "voice": "무제한",
+                "sms": "무제한",
+                "benefits": null
+              },
+              {
+                "name": "5G 슬림",
+                "monthly_fee": 59000,
+                "data": "12GB + 소진 후 3Mbps",
+                "voice": "무제한",
+                "sms": "무제한",
+                "benefits": null
+              }
+            ],
+            "direct_online_only": [
+              {
+                "name": "5G 다이렉트 55",
+                "monthly_fee": 55000,
+                "data": "10GB + 소진 후 1Mbps",
+                "voice": "무제한",
+                "sms": "무제한",
+                "note": "T월드/앱 전용, 고객센터 가입/변경 불가"
+              },
+              {
+                "name": "5G 다이렉트 45",
+                "monthly_fee": 45000,
+                "data": "6GB + 소진 후 1Mbps",
+                "voice": "무제한",
+                "sms": "무제한",
+                "note": "T월드/앱 전용, 고객센터 가입/변경 불가"
+              },
+              {
+                "name": "5G 다이렉트 33",
+                "monthly_fee": 33000,
+                "data": "3GB + 소진 후 400Kbps",
+                "voice": "무제한",
+                "sms": "무제한",
+                "note": "T월드/앱 전용, 고객센터 가입/변경 불가"
+              }
+            ],
+            "tip": "다이렉트 요금제는 고객센터에서 가입/변경이 불가합니다. T월드 앱 또는 홈페이지를 통해서만 처리 가능."
+          }
+        },
+        {
+          "id": "s2.2",
+          "title": "LTE 요금제 라인업",
+          "keywords": ["LTE", "요금제", "무제한", "베이직", "라이트", "에센셜", "심플", "절약"],
+          "content": {
+            "standard": [
+              { "name": "LTE 무제한 79", "monthly_fee": 79000, "data": "무제한(일 5GB 후 3Mbps)", "voice": "무제한", "sms": "무제한" },
+              { "name": "LTE 무제한 69", "monthly_fee": 69000, "data": "무제한(일 2GB 후 3Mbps)", "voice": "무제한", "sms": "무제한" },
+              { "name": "LTE 스탠다드 59", "monthly_fee": 59000, "data": "11GB + 소진 후 3Mbps", "voice": "무제한", "sms": "무제한" },
+              { "name": "LTE 베이직 49", "monthly_fee": 49000, "data": "6GB + 소진 후 1Mbps", "voice": "무제한", "sms": "무제한" },
+              { "name": "LTE 라이트 39", "monthly_fee": 39000, "data": "3.5GB + 소진 후 400Kbps", "voice": "무제한", "sms": "무제한" },
+              { "name": "LTE 에센셜 33", "monthly_fee": 33000, "data": "2GB + 소진 후 400Kbps", "voice": "무제한", "sms": "무제한" },
+              { "name": "LTE 심플 29", "monthly_fee": 29000, "data": "1.5GB + 소진 후 400Kbps", "voice": "100분", "sms": "100건" }
+            ],
+            "budget": [
+              { "name": "LTE 절약 25", "monthly_fee": 25000, "data": "1GB + 소진 후 400Kbps", "voice": "100분", "sms": "100건" },
+              { "name": "LTE 절약 19", "monthly_fee": 19000, "data": "500MB", "voice": "60분", "sms": "60건" }
+            ],
+            "tip": "LTE 요금제에서 5G 요금제로 변경 시, 5G 단말이 아닌 경우 5G 네트워크 이용이 불가함을 반드시 안내."
+          }
+        },
+        {
+          "id": "s2.3",
+          "title": "시니어/청소년/어린이 전용 요금제",
+          "keywords": ["시니어", "청소년", "어린이", "Y틴", "쥬니어", "실버", "만65세", "미성년자"],
+          "content": {
+            "senior": {
+              "eligibility": "명의자 기준 만 65세 이상 (생년월일 자동 확인)",
+              "plans": [
+                { "name": "시니어 안심 35", "monthly_fee": 35000, "data": "3GB + 소진 후 400Kbps", "voice": "무제한", "sms": "무제한", "benefits": "큰글씨 UI 제공" },
+                { "name": "시니어 실버 29", "monthly_fee": 29000, "data": "1.5GB + 소진 후 400Kbps", "voice": "무제한", "sms": "100건", "benefits": "안심귀가서비스 포함" },
+                { "name": "시니어 라이트 22", "monthly_fee": 22000, "data": "500MB", "voice": "200분", "sms": "200건", "benefits": "기본 통화 위주" }
+              ]
+            },
+            "youth": {
+              "eligibility": "만 13~18세, 법정대리인 동의 필수",
+              "plans": [
+                { "name": "Y틴 55", "monthly_fee": 55000, "data": "무제한(일 2GB 후 3Mbps)", "voice": "무제한", "sms": "무제한", "benefits": "T우주 라이트 포함" },
+                { "name": "Y틴 39", "monthly_fee": 39000, "data": "5GB + 소진 후 1Mbps", "voice": "무제한", "sms": "무제한", "benefits": null },
+                { "name": "Y틴 29", "monthly_fee": 29000, "data": "2GB + 소진 후 400Kbps", "voice": "무제한", "sms": "무제한", "benefits": null }
+              ]
+            },
+            "children": {
+              "eligibility": "만 12세 이하, 법정대리인 명의 또는 동의 필수",
+              "plans": [
+                { "name": "쥬니어 안심 29", "monthly_fee": 29000, "data": "1.5GB + 소진 후 400Kbps", "voice": "무제한", "sms": "무제한", "benefits": "자녀 위치확인, 유해 콘텐츠 차단" },
+                { "name": "쥬니어 라이트 22", "monthly_fee": 22000, "data": "500MB", "voice": "100분", "sms": "100건", "benefits": "위치확인 서비스 포함" }
+              ]
+            }
+          }
+        },
+        {
+          "id": "s2.4",
+          "title": "데이터 중심 요금제 (0 플랜 시리즈)",
+          "keywords": ["0플랜", "영플랜", "맞춤형", "데이터온", "비디오온", "SNS온", "게임온", "T우주온"],
+          "content": {
+            "plans": [
+              { "name": "0 플랜 라지", "monthly_fee": 69000, "data": "9GB", "voice": "무제한", "sms": "무제한", "options_count": 2 },
+              { "name": "0 플랜 미디엄", "monthly_fee": 55000, "data": "5GB", "voice": "무제한", "sms": "무제한", "options_count": 1 },
+              { "name": "0 플랜 스몰", "monthly_fee": 42000, "data": "2GB", "voice": "무제한", "sms": "무제한", "options_count": 1 }
+            ],
+            "options": [
+              { "name": "데이터 온", "description": "매일 2GB 추가 제공", "note": "인기 옵션" },
+              { "name": "비디오 온", "description": "유튜브/넷플릭스 등 영상 데이터 무제한", "note": "특정 앱 한정" },
+              { "name": "SNS 온", "description": "인스타/카카오/네이버 등 SNS 데이터 무제한", "note": "특정 앱 한정" },
+              { "name": "게임 온", "description": "주요 모바일 게임 데이터 무제한", "note": "특정 앱 한정" },
+              { "name": "T우주 온", "description": "T우주 패키지 (TMAP+FLO+11번가 등)", "note": "구독 혜택" }
+            ],
+            "tip": "0 플랜의 옵션은 월 1회 변경 가능하며, 변경 시 익월 적용. 요금제 변경 없이 옵션만 변경도 가능."
+          }
+        },
+        {
+          "id": "s2.5",
+          "title": "요금제 변경 처리 절차",
+          "keywords": ["요금제변경", "변경절차", "즉시적용", "익월적용", "일할계산"],
+          "content": {
+            "channels": [
+              { "channel": "고객센터 전화 (114)", "available": true, "timing": "즉시/익월 선택", "note": "다이렉트 요금제 제외" },
+              { "channel": "T월드 앱/웹", "available": true, "timing": "즉시/익월 선택", "note": "전 요금제 가능" },
+              { "channel": "대리점/직영점", "available": true, "timing": "즉시/익월 선택", "note": "본인 방문 필요" }
+            ],
+            "procedure": [
+              "본인확인 수행",
+              "현재 요금제 확인 및 안내",
+              "변경 희망 요금제 확인",
+              "변경 시 유의사항 안내 (약정 위약금, 결합할인, 부가서비스, 프로모션)",
+              "적용 시점 선택 확인 (당월/익월)",
+              "변경 처리 및 결과 안내",
+              "상담 이력 기록"
+            ],
+            "timing": {
+              "즉시적용": "변경 시점부터 새 요금제 적용. 일할 계산",
+              "익월적용": "다음 달 1일부터 새 요금제 적용"
+            },
+            "caution": "상위 → 하위 요금제 변경 시 약정 위약금 발생 가능. 반드시 확인 후 안내."
+          }
+        },
+        {
+          "id": "s2.6",
+          "title": "요금제 변경 시 주의사항",
+          "keywords": ["위약금", "약정", "공시지원금", "선택약정", "프로모션", "결합할인"],
+          "content": {
+            "contract_impact": [
+              { "situation": "약정 내 동일/상위 요금제 변경", "penalty": false, "note": "약정 유지" },
+              { "situation": "약정 내 하위 요금제 변경", "penalty": true, "note": "공시지원금 차액 환수 가능" },
+              { "situation": "선택약정 중 요금제 변경", "penalty": "conditional", "note": "선택약정 할인율 유지, 기준 금액 변경" },
+              { "situation": "약정 만료 후 변경", "penalty": false, "note": "자유롭게 변경 가능" }
+            ],
+            "penalty_formula": {
+              "공시지원금": "위약금 = 공시지원금 × 잔여약정비율 × 차등율 (처음 50% 내 해지 시 40%, 이후 20%)",
+              "선택약정": "기할인 적용 받은 총 금액의 일부 환수"
+            },
+            "promotion_impact": [
+              "결합할인: 요금제 변경 시 결합 조건 미충족으로 할인 해제 가능",
+              "장기고객 혜택: 요금제 변경과 무관하게 유지",
+              "프로모션 요금제: 변경 시 재가입 불가 가능 (종료된 프로모션)",
+              "부가서비스 연동: 특정 요금제 포함 부가서비스 자동 해지 가능"
+            ]
+          }
+        },
+        {
+          "id": "s2.7",
+          "title": "요금제 비교 상담 가이드",
+          "keywords": ["요금제추천", "요금제비교", "사용패턴", "데이터사용량"],
+          "content": {
+            "recommendations": [
+              { "customer_type": "데이터 헤비 유저", "usage_pattern": "영상/게임 등 대용량", "recommended": ["5G 플래티넘", "5G 프라임 플러스"] },
+              { "customer_type": "일반 직장인", "usage_pattern": "중간 사용량", "recommended": ["5G 스탠다드", "LTE 무제한 69"] },
+              { "customer_type": "데이터 절약형", "usage_pattern": "Wi-Fi 주 사용", "recommended": ["5G 다이렉트 33", "LTE 라이트 39"] },
+              { "customer_type": "시니어", "usage_pattern": "통화 위주", "recommended": ["시니어 안심 35", "시니어 실버 29"] },
+              { "customer_type": "학생", "usage_pattern": "SNS/영상 위주", "recommended": ["Y틴 55", "0 플랜 미디엄 + SNS 온"] }
+            ],
+            "tip": "무조건 저가 요금제 추천보다 고객 실제 사용 패턴(데이터, 통화량)을 확인 후 최적 요금제 제안. 시스템에서 최근 3개월 사용량 조회 가능."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ch03",
+      "title": "요금/청구/납부",
+      "page_range": "13~18",
+      "sections": [
+        {
+          "id": "s3.1",
+          "title": "요금 청구 구조",
+          "keywords": ["청구구조", "기본료", "부가세", "할부금", "일할계산", "청구일"],
+          "content": {
+            "billing_structure": {
+              "formula": "총 청구금액 = 기본료 + 부가서비스료 + 단말할부금 + 콘텐츠이용료 + 부가세(10%) - 할인금액",
+              "items": [
+                { "item": "기본료", "vat": "별도", "description": "가입 요금제의 월정액" },
+                { "item": "부가서비스료", "vat": "별도", "description": "개별 서비스별 청구" },
+                { "item": "단말할부금", "vat": "별도", "description": "24/30/36개월 할부" },
+                { "item": "소액결제", "vat": "포함", "description": "별도 명세" },
+                { "item": "로밍요금", "vat": "별도", "description": "이용 익월 청구" },
+                { "item": "국제전화", "vat": "별도", "description": "사용량 기반" }
+              ]
+            },
+            "billing_cycle": {
+              "usage_period": "매월 1일~말일",
+              "billing": "사용 익월 청구",
+              "due_date": "청구월 말일",
+              "proration": "월 중 가입/해지 시 기본료 일할 계산"
+            }
+          }
+        },
+        {
+          "id": "s3.2",
+          "title": "요금 조회 및 상세 안내 방법",
+          "keywords": ["요금조회", "청구내역", "요금확인"],
+          "content": {
+            "channels": [
+              { "channel": "고객센터 (114)", "method": "상담원 안내", "range": "최근 6개월" },
+              { "channel": "T월드 앱", "method": "실시간 조회", "range": "최근 12개월" },
+              { "channel": "T월드 웹", "method": "로그인 후 조회", "range": "최근 12개월" },
+              { "channel": "ARS (114)", "method": "자동응답", "range": "전월/당월" }
+            ],
+            "cautions": [
+              "미확정 요금(당월 사용 중)은 '예상 요금'임을 명확히 안내",
+              "소액결제/콘텐츠이용료는 SKT가 아닌 콘텐츠 제공사(CP) 과금임을 안내",
+              "부가세 포함/별도 여부를 정확히 구분하여 안내"
+            ]
+          }
+        },
+        {
+          "id": "s3.3",
+          "title": "납부 방법",
+          "keywords": ["납부", "자동이체", "카드결제", "가상계좌", "편의점납부", "납부일변경"],
+          "content": {
+            "payment_methods": [
+              { "method": "자동이체 (은행)", "description": "매월 지정일에 은행 계좌에서 자동 출금", "channel": "고객센터, T월드, 대리점" },
+              { "method": "자동이체 (카드)", "description": "매월 지정 신용/체크카드로 자동 결제", "channel": "고객센터, T월드, 대리점" },
+              { "method": "가상계좌", "description": "매월 부여되는 전용 계좌로 입금", "channel": "청구서 내 안내" },
+              { "method": "지로 납부", "description": "은행 지로 수납", "channel": "청구서 지참 후 은행 방문" },
+              { "method": "편의점 납부", "description": "CU, GS25, 세븐일레븐 등", "channel": "바코드 청구서 필요" },
+              { "method": "T월드 앱 납부", "description": "앱 내에서 즉시 결제", "channel": "앱 로그인 후 처리" }
+            ],
+            "auto_transfer_discount": {
+              "은행": "월 300원 할인 (정상 출금 시)",
+              "카드": "카드사별 상이 (카드사 프로모션에 따름)"
+            },
+            "due_date_change": {
+              "options": ["매월 1일", "10일", "15일", "20일", "25일"],
+              "channel": "고객센터 또는 T월드",
+              "effective": "변경 신청 익월부터 적용"
+            }
+          }
+        },
+        {
+          "id": "s3.4",
+          "title": "미납/연체 처리 및 이용정지 기준",
+          "keywords": ["미납", "연체", "이용정지", "발신정지", "직권해지", "납부독촉"],
+          "content": {
+            "delinquency_stages": [
+              { "stage": 1, "name": "납부 안내", "timing": "납기 후 1~7일", "action": "SMS/카카오톡 납부 독촉 안내" },
+              { "stage": 2, "name": "납부 독촉", "timing": "납기 후 8~14일", "action": "2차 독촉 + 이용정지 예고" },
+              { "stage": 3, "name": "발신정지", "timing": "납기 후 약 15일~", "action": "발신 서비스 정지 (수신 가능)" },
+              { "stage": 4, "name": "전면정지", "timing": "납기 후 약 30일~", "action": "수/발신 전면 정지" },
+              { "stage": 5, "name": "직권해지", "timing": "정지 후 약 60일~", "action": "계약 해지 + 채권 추심 이관" }
+            ],
+            "release_conditions": {
+              "full_payment": "즉시 해제",
+              "partial_payment": "당월 청구분 납부 시 조건부 해제 가능",
+              "payment_promise": "향후 납부 약속 접수 시 한시적 해제 (1회 한정)"
+            },
+            "late_fee": "연 6% (미납일부터 일할 적용)"
+          }
+        },
+        {
+          "id": "s3.5",
+          "title": "요금 감면 제도",
+          "keywords": ["요금감면", "장애인", "국가유공자", "기초생활수급자", "차상위계층", "할인"],
+          "content": {
+            "eligible_groups": [
+              { "group": "장애인 (1~3급)", "discount": "기본료 35% 할인", "documents": "복지카드 또는 장애인증명서" },
+              { "group": "장애인 (4~6급)", "discount": "기본료 25% 할인", "documents": "복지카드 또는 장애인증명서" },
+              { "group": "국가유공자", "discount": "기본료 35% 할인", "documents": "국가유공자증" },
+              { "group": "기초생활수급자", "discount": "기본료 26,000원 감면 (최대)", "documents": "수급자증명서 (최근 1개월 이내)" },
+              { "group": "차상위계층", "discount": "기본료 11,000원 감면 (최대)", "documents": "차상위계층확인서" }
+            ],
+            "procedure": [
+              "본인확인 수행",
+              "감면 대상 서류 확인",
+              "시스템에 감면 등록",
+              "적용 시점: 신청 익월부터 (월 중 신청 시 해당월 일할 적용)",
+              "갱신: 기초생활수급자/차상위계층은 연 1회 갱신 필요"
+            ],
+            "note": "감면 혜택은 1인 1회선에만 적용. 타 통신사 감면과 중복 적용 불가."
+          }
+        },
+        {
+          "id": "s3.6",
+          "title": "요금 이의신청 및 환불 처리",
+          "keywords": ["이의신청", "환불", "과금오류", "요금정산"],
+          "content": {
+            "dispute_reasons": [
+              { "reason": "미사용 서비스 과금", "handling": "사용 이력 확인 후 환불 처리" },
+              { "reason": "중복 과금", "handling": "시스템 확인 후 차액 환불" },
+              { "reason": "네트워크 장애로 인한 과금", "handling": "장애 이력 확인 후 감면 처리" },
+              { "reason": "소액결제 미인지 과금", "handling": "CP 확인 후 처리 (SKT 직접 환불 불가)" },
+              { "reason": "로밍 요금 이의", "handling": "이용 이력 확인 후 부분 감면 가능" }
+            ],
+            "refund_procedure": [
+              "이의신청 접수 (상담원 또는 T월드)",
+              "조사 기간: 접수 후 최대 14일",
+              "결과 통보: SMS 또는 전화",
+              "환불 방법: 차월 요금 차감 또는 지정 계좌 입금"
+            ],
+            "refund_authority": [
+              { "amount": "1만원 이하", "authority": "상담원 즉시 처리 가능" },
+              { "amount": "1만원 초과 ~ 5만원 이하", "authority": "팀장 승인 후 처리" },
+              { "amount": "5만원 초과", "authority": "요금정산팀 이관" }
+            ]
+          }
+        },
+        {
+          "id": "s3.7",
+          "title": "소액결제/콘텐츠이용료 관련 문의",
+          "keywords": ["소액결제", "콘텐츠이용료", "결제차단", "결제한도", "미인지결제"],
+          "content": {
+            "difference": {
+              "소액결제": { "content": "온라인 쇼핑몰 등 결제", "method": "결제 시 SMS 인증", "limit_management": "월 한도 설정 가능", "refund": "구매처에 직접 요청" },
+              "콘텐츠이용료": { "content": "앱/게임 내 결제, 정보서비스", "method": "자동 과금 또는 앱 내 결제", "limit_management": "차단 설정 가능", "refund": "CP(콘텐츠 제공사)에 요청" }
+            },
+            "limits": [
+              { "grade": "일반", "monthly_limit": 300000 },
+              { "grade": "우수", "monthly_limit": 500000 },
+              { "grade": "VIP", "monthly_limit": 1000000 }
+            ],
+            "blocking_types": [
+              "전체 차단: 소액결제 완전 차단",
+              "게임 차단: 게임 앱 결제만 차단",
+              "한도 제한: 월 결제 한도 축소"
+            ],
+            "unknown_charge_procedure": [
+              "결제 내역 확인 (결제일, 금액, CP명)",
+              "CP 연락처 안내",
+              "CP에 직접 환불 요청 안내",
+              "필요 시 결제 차단 처리",
+              "경찰 신고 안내 (사기 의심 시)"
+            ],
+            "tip": "SKT는 소액결제의 결제 중개만 수행하며, 실제 환불은 구매처(CP)에서 처리해야 합니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ch04",
+      "title": "부가서비스",
+      "page_range": "19~24",
+      "sections": [
+        {
+          "id": "s4.1",
+          "title": "데이터 관련 서비스",
+          "keywords": ["데이터리필", "데이터나눠쓰기", "안심데이터", "데이터쿠폰", "T가족모아"],
+          "content": {
+            "data_refill": [
+              { "name": "데이터 리필 1GB", "monthly_fee": 5500, "data": "1GB", "note": "당월 미사용분 소멸" },
+              { "name": "데이터 리필 2GB", "monthly_fee": 8800, "data": "2GB", "note": "당월 미사용분 소멸" },
+              { "name": "데이터 리필 5GB", "monthly_fee": 16500, "data": "5GB", "note": "당월 미사용분 소멸" }
+            ],
+            "data_sharing": {
+              "name": "T가족모아 데이터 나눠쓰기",
+              "fee": "무료",
+              "description": "가족 회선 간 데이터 공유 (최대 5회선)",
+              "requirement": "T가족모아 그룹 등록 필요"
+            },
+            "data_safety": [
+              { "name": "안심 데이터 차단", "fee": "무료", "description": "데이터 소진 시 자동 차단 (추가 과금 방지)" },
+              { "name": "안심 데이터 알림", "fee": "무료", "description": "데이터 사용량 80%/100% 도달 시 알림" }
+            ],
+            "data_coupons": [
+              { "name": "데이터쿠폰 500MB", "price": 3300, "data": "500MB", "validity": "구매일 포함 30일" },
+              { "name": "데이터쿠폰 1GB", "price": 5500, "data": "1GB", "validity": "구매일 포함 30일" },
+              { "name": "데이터쿠폰 3GB", "price": 11000, "data": "3GB", "validity": "구매일 포함 30일" }
+            ]
+          }
+        },
+        {
+          "id": "s4.2",
+          "title": "통화/문자 관련 서비스",
+          "keywords": ["T전화", "스팸차단", "발신번호표시", "컬러링", "멀티넘버", "착신전환"],
+          "content": {
+            "t_phone": [
+              { "name": "T전화 기본", "fee": "무료", "features": "발신자 정보 표시, 스팸 차단, 녹음" },
+              { "name": "T전화 프로", "fee": 1100, "features": "기본 + 영상통화, 그룹통화, 통화 요약" }
+            ],
+            "spam_blocking": [
+              { "name": "스팸차단 서비스", "fee": "무료", "description": "스팸 번호 자동 차단" },
+              { "name": "착신전환", "fee": "무료", "description": "수신 전화를 다른 번호로 전환" },
+              { "name": "발신번호표시 제한", "fee": "무료", "description": "발신 시 번호 비공개 (*23#)" }
+            ],
+            "voice_services": [
+              { "name": "통화연결음 (컬러링)", "fee": 2200, "description": "대기 시 음악/멘트 재생" },
+              { "name": "기다리는 고객안내", "fee": "무료", "description": "통화 중일 때 상대방에게 안내" },
+              { "name": "멀티넘버", "fee": 2200, "description": "하나의 단말에 번호 추가 (업무용/개인용)" }
+            ]
+          }
+        },
+        {
+          "id": "s4.3",
+          "title": "보험/보장 서비스",
+          "keywords": ["T안심보험", "분실보험", "파손보험", "보험금청구", "대체폰"],
+          "content": {
+            "insurance_plans": [
+              { "name": "T안심보험 프리미엄", "fee": 9900, "coverage": "파손, 분실, 도난, 침수, 배터리", "note": "자기부담금 일부" },
+              { "name": "T안심보험 스탠다드", "fee": 6600, "coverage": "파손, 분실, 침수", "note": "자기부담금 일부" },
+              { "name": "T안심보험 라이트", "fee": 3300, "coverage": "파손(액정 파손 위주)", "note": "자기부담금 일부" }
+            ],
+            "claim_procedure": [
+              "T월드 앱 또는 고객센터를 통해 사고 접수",
+              "필요 서류 제출 (신분증, 사고 증빙 사진 등)",
+              "심사 기간: 접수 후 3~5영업일",
+              "보험금 지급: 수리 완료 후 보험금 입금 또는 대체폰 발송"
+            ],
+            "cautions": [
+              "가입은 개통일로부터 30일 이내에만 가능",
+              "기존 파손/고장 상태에서는 가입 불가",
+              "보험금 청구는 연 2회까지 가능",
+              "대체폰은 동일 모델 또는 동급 모델로 제공"
+            ]
+          }
+        },
+        {
+          "id": "s4.4",
+          "title": "구독형 서비스",
+          "keywords": ["T우주", "TMAP", "FLO", "Wavve", "지니뮤직", "구독", "OTT"],
+          "content": {
+            "t_universe": [
+              { "name": "T우주 프리미엄", "fee": "요금제 포함 (5G 플래티넘)", "includes": "TMAP 프리미엄 + FLO 무제한 + 11번가 할인 + 원스토어" },
+              { "name": "T우주 스탠다드", "fee": "요금제 포함 (5G 프라임 플러스)", "includes": "TMAP 기본 + FLO 300회 + 11번가 할인" },
+              { "name": "T우주 라이트", "fee": "요금제 포함 (5G 프라임)", "includes": "TMAP 기본 + FLO 100회 + 11번가 할인" },
+              { "name": "T우주 베이직", "fee": 9900, "includes": "TMAP 기본 + FLO 100회 + 11번가 할인" }
+            ],
+            "partner_services": [
+              { "name": "FLO 음악 무제한", "regular_fee": 10900, "skt_price": 7700, "description": "음악 스트리밍 무제한" },
+              { "name": "Wavve 스탠다드", "regular_fee": 10900, "skt_price": 7900, "description": "OTT 영상 스트리밍" },
+              { "name": "지니뮤직", "regular_fee": 8900, "skt_price": 6600, "description": "음악 스트리밍" }
+            ],
+            "tip": "T우주 요금제 포함형은 요금제 유지 시 무료. 요금제 변경 시 T우주 혜택 변경/종료 가능."
+          }
+        },
+        {
+          "id": "s4.5",
+          "title": "멤버십/혜택",
+          "keywords": ["T멤버십", "T포인트", "VIP", "골드", "실버", "멤버십할인", "포인트"],
+          "content": {
+            "membership_tiers": [
+              { "tier": "VIP+", "criteria": "월 100,000원 이상 또는 10년 이상 가입", "annual_points": 120000, "max_discount": "40%", "extra": "전용 라운지" },
+              { "tier": "VIP", "criteria": "월 80,000원 이상 또는 7년 이상 가입", "annual_points": 96000, "max_discount": "35%", "extra": null },
+              { "tier": "골드", "criteria": "월 50,000원 이상 또는 4년 이상 가입", "annual_points": 60000, "max_discount": "30%", "extra": null },
+              { "tier": "실버", "criteria": "일반 가입자", "annual_points": 36000, "max_discount": "20%", "extra": null }
+            ],
+            "usage_partners": [
+              { "category": "외식", "partners": "CJ푸드빌, 뚜레쥬르, 배스킨라빈스", "discount": "최대 40%" },
+              { "category": "카페", "partners": "투썸플레이스, 할리스", "discount": "최대 30%" },
+              { "category": "영화", "partners": "CGV, 롯데시네마", "discount": "최대 6,000원 할인" },
+              { "category": "편의점", "partners": "CU, GS25, 세븐일레븐", "discount": "최대 20%" },
+              { "category": "주유", "partners": "GS칼텍스, SK에너지", "discount": "리터당 최대 80원 할인" }
+            ],
+            "t_point": {
+              "earn": "요금 납부, 제휴사 이용 시 적립",
+              "use": "요금 납부, T멤버십 제휴처, 온라인 쇼핑 등",
+              "validity": "적립일로부터 5년",
+              "expiry_notice": "소멸 1개월 전 SMS 안내"
+            }
+          }
+        },
+        {
+          "id": "s4.6",
+          "title": "부가서비스 가입/해지 처리 절차",
+          "keywords": ["부가서비스가입", "부가서비스해지", "서비스해지", "해지주의사항"],
+          "content": {
+            "subscription_procedure": [
+              "본인확인 수행",
+              "서비스 상세 안내 (요금, 내용, 약정 여부)",
+              "고객 동의 확인",
+              "시스템에서 가입 처리",
+              "가입 완료 안내 (적용 시점, 해지 방법 포함)",
+              "SMS 가입 확인 안내 발송"
+            ],
+            "cancellation_procedure": [
+              "본인확인 수행",
+              "해지 요청 서비스 확인",
+              "해지 시 유의사항 안내",
+              "고객 최종 확인",
+              "시스템에서 해지 처리",
+              "SMS 해지 확인 안내 발송"
+            ],
+            "cancellation_cautions": [
+              { "type": "약정 서비스", "caution": "약정 기간 내 해지 시 위약금 발생 가능" },
+              { "type": "번들 서비스", "caution": "요금제 포함 서비스는 요금제 변경 시 자동 해지" },
+              { "type": "보험 서비스", "caution": "해지 후 재가입 제한 (개통 30일 이내만 가능)" },
+              { "type": "정보이용료", "caution": "CP 직접 해지가 필요한 경우 있음" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ch05",
+      "title": "기기 관련",
+      "page_range": "25~30",
+      "sections": [
+        {
+          "id": "s5.1",
+          "title": "신규가입 절차 및 구비서류",
+          "keywords": ["신규가입", "구비서류", "신분증", "미성년자가입", "외국인가입", "법인가입", "가입제한"],
+          "content": {
+            "documents_by_type": [
+              { "type": "성인 본인", "documents": "신분증 원본 (주민등록증, 운전면허증, 여권)" },
+              { "type": "미성년자", "documents": "법정대리인 신분증 + 가족관계증명서 + 법정대리인 동의서", "note": "만 14세 이상은 본인 신분증도 필요" },
+              { "type": "외국인", "documents": "외국인등록증 또는 여권 + 입국사실증명서", "note": "체류 기간 내 약정" },
+              { "type": "법인", "documents": "사업자등록증 + 법인인감증명서 + 재직증명서 + 대리인 신분증", "note": "법인 명판 또는 직인 필요" }
+            ],
+            "restrictions": [
+              { "restriction": "1인 최대 회선 수", "criteria": "5회선 (전 통신사 합산)" },
+              { "restriction": "미납 이력", "criteria": "타 통신사 포함 미납금 있을 경우 가입 제한" },
+              { "restriction": "신용불량", "criteria": "NICE 신용평가 기준 일정 등급 이하 가입 제한" },
+              { "restriction": "명의도용 이력", "criteria": "명의도용 방지 서비스 설정 시 해제 후 가입" }
+            ]
+          }
+        },
+        {
+          "id": "s5.2",
+          "title": "기기변경 절차",
+          "keywords": ["기기변경", "단말기변경", "USIM교체", "데이터이동"],
+          "content": {
+            "procedure": [
+              "본인확인 수행",
+              "기존 약정/할부 잔여분 확인",
+              "새 단말기 선택",
+              "약정 조건 선택 (공시지원금/선택약정/무약정)",
+              "기존 부가서비스 유지/변경 확인",
+              "데이터 이동 안내 (스마트스위치 등)",
+              "개통 처리",
+              "단말기 정상 동작 확인"
+            ],
+            "cautions": [
+              "기존 할부금 남아있을 경우 2건 동시 할부 가능 (심사 필요)",
+              "기존 약정 위약금 발생 가능",
+              "USIM 교체 필요할 수 있음 (나노SIM ↔ eSIM 등)",
+              "기존 보험 서비스 자동 해지 → 새 단말 30일 내 재가입 필요"
+            ]
+          }
+        },
+        {
+          "id": "s5.3",
+          "title": "번호이동(MNP) 전입/전출 처리",
+          "keywords": ["번호이동", "MNP", "전입", "전출", "타사이동"],
+          "content": {
+            "port_in": {
+              "procedure": [
+                "본인확인 및 서류 확인",
+                "타사 위약금/잔여 할부금 안내",
+                "요금제 및 단말기 선택",
+                "약정 조건 설정",
+                "번호이동 신청 접수",
+                "개통 처리 (약 1~2시간 소요)",
+                "정상 동작 확인"
+              ],
+              "documents": "신분증 원본 + 타사 계약 정보 (자동 조회 가능)"
+            },
+            "port_out": {
+              "notes": [
+                "SKT에서 별도 해지 절차 불필요 (타사 전입 시 자동 해지)",
+                "잔여 할부금은 SKT에서 계속 청구",
+                "약정 위약금은 최종 청구서에 합산",
+                "전출 후 T멤버십 포인트 소멸"
+              ]
+            },
+            "restrictions": [
+              { "restriction": "최소 가입 유지기간", "detail": "가입 후 즉시 이동 가능 (제한 없음)" },
+              { "restriction": "미납", "detail": "미납 시 번호이동 불가. 정산 후 가능" },
+              { "restriction": "이용정지", "detail": "이용정지 상태에서 번호이동 불가" },
+              { "restriction": "법인 회선", "detail": "법인 담당자 승인 필요" }
+            ]
+          }
+        },
+        {
+          "id": "s5.4",
+          "title": "약정/할부 안내",
+          "keywords": ["약정", "할부", "공시지원금", "선택약정", "위약금", "할부이자", "24개월"],
+          "content": {
+            "subsidy": {
+              "definition": "단말기 구매 시 통신사가 지원하는 보조금",
+              "contract_period": "24개월 의무 사용",
+              "penalty": "잔여 약정 기간에 비례하여 부과",
+              "additional_subsidy": "공시지원금의 최대 15%까지 대리점/직영점에서 추가 지원 가능"
+            },
+            "optional_discount": {
+              "definition": "공시지원금 대신 월 요금 25% 할인",
+              "contract_period": "24개월",
+              "discount_rate": "기본료의 25%",
+              "penalty": "잔여 기간 할인받은 금액의 일정 비율 환수"
+            },
+            "installment": {
+              "periods": ["24개월", "30개월", "36개월"],
+              "interest_rate": "5.9% (연) - 2025년 1월 기준",
+              "early_repayment": "잔여 할부금 일시 납부 가능 (수수료 없음)",
+              "default": "2개월 연속 미납 시 할부 계약 해지 가능"
+            }
+          }
+        },
+        {
+          "id": "s5.5",
+          "title": "중고폰/자급제폰 개통 처리",
+          "keywords": ["중고폰", "자급제폰", "USIM", "IMEI", "개통"],
+          "content": {
+            "unlocked_phone_procedure": [
+              "단말기 IMEI 확인 (*#06#)",
+              "SKT 네트워크 호환 여부 확인",
+              "USIM 발급 또는 eSIM 개통",
+              "요금제 선택 (약정 없이 가입 가능)",
+              "개통 처리"
+            ],
+            "usim_issuance": {
+              "offline": "대리점/직영점 방문 시 즉시 발급 (7,700원)",
+              "online": "T월드에서 주문 후 배송"
+            },
+            "used_phone_checks": [
+              { "item": "분실/도난 등록 여부", "description": "IMEI 조회로 확인 필수" },
+              { "item": "개통 제한 단말", "description": "할부 미납, 보험 처리 단말은 개통 제한" },
+              { "item": "네트워크 호환성", "description": "SKT 주파수 대역 지원 여부 확인" },
+              { "item": "단말 정상 동작", "description": "고객 책임 (중고 거래에 대한 SKT 보증 없음)" }
+            ]
+          }
+        },
+        {
+          "id": "s5.6",
+          "title": "eSIM 개통 및 관리",
+          "keywords": ["eSIM", "이심", "듀얼심", "QR코드", "프로파일"],
+          "content": {
+            "overview": {
+              "definition": "물리적 SIM 없이 단말기에 내장된 칩으로 개통",
+              "supported_devices": "iPhone XS 이후, Galaxy S21 이후 등 eSIM 지원 단말",
+              "issuance_fee": 2750,
+              "advantages": ["듀얼심 활용", "물리 SIM 슬롯 확보", "해외 로밍 시 편리"]
+            },
+            "procedure": [
+              "eSIM 지원 단말 확인",
+              "T월드 앱 또는 대리점에서 eSIM 신청",
+              "QR 코드 발급",
+              "단말기에서 QR 코드 스캔하여 eSIM 설치",
+              "네트워크 연결 확인"
+            ],
+            "cautions": [
+              "eSIM 프로파일은 한 번에 하나의 단말에서만 사용 가능",
+              "단말기 변경 시 eSIM 재발급 필요 (비용 발생)",
+              "일부 해외 로밍에서 eSIM 지원 제한 가능",
+              "단말기 초기화 시 eSIM 프로파일 삭제 가능성 주의"
+            ]
+          }
+        },
+        {
+          "id": "s5.7",
+          "title": "분실/습득 신고 처리",
+          "keywords": ["분실신고", "습득신고", "분실정지", "대체폰", "위치추적"],
+          "content": {
+            "lost_report": {
+              "procedure": [
+                "본인확인 (분실자 본인 또는 대리인)",
+                "분실 신고 접수 → 즉시 발신/수신 정지",
+                "분실보험 가입 여부 확인 → 보험 접수 안내",
+                "대체폰 또는 임시폰 안내",
+                "위치추적 서비스 안내"
+              ],
+              "channels": [
+                "고객센터: 114 (타 전화에서 080-011-6000)",
+                "T월드 앱/웹",
+                "분실접수 전용: 1599-0011 (24시간)"
+              ]
+            },
+            "lost_release": {
+              "found": "본인확인 후 즉시 해제",
+              "device_change": "새 단말로 기기변경 개통",
+              "cancel": "해지 처리 (잔여 할부금/위약금 발생 가능)"
+            },
+            "found_report": [
+              "고객센터 또는 경찰서에 습득 신고",
+              "습득 단말의 IMEI로 분실 등록 여부 확인",
+              "분실 등록된 경우 원소유자에게 연락",
+              "원소유자 확인 불가 시 경찰서 인계 안내"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ch06",
+      "title": "로밍 서비스",
+      "page_range": "31~35",
+      "sections": [
+        {
+          "id": "s6.1",
+          "title": "자동로밍 안내",
+          "keywords": ["자동로밍", "해외로밍", "로밍요금", "로밍데이터"],
+          "content": {
+            "overview": {
+              "definition": "해외에서 SKT 가입 단말로 통신 서비스 이용",
+              "method": "SKT와 제휴된 해외 통신사 네트워크 이용",
+              "default_setting": "자동로밍 ON 상태"
+            },
+            "default_rates_without_plan": [
+              { "service": "음성 수신", "rate": "약 900~2,000원/분", "note": "국가별 상이" },
+              { "service": "음성 발신 (현지→한국)", "rate": "약 1,200~3,500원/분", "note": "국가별 상이" },
+              { "service": "음성 발신 (현지→현지)", "rate": "약 1,000~2,500원/분", "note": "국가별 상이" },
+              { "service": "데이터", "rate": "약 15,000~20,000원/MB", "note": "매우 고가 - 반드시 요금제 안내" },
+              { "service": "문자 발신", "rate": "약 200~350원/건", "note": "국가별 상이" },
+              { "service": "문자 수신", "rate": "무료", "note": null }
+            ],
+            "warning": "로밍 데이터를 요금제 없이 사용하면 1MB당 15,000~20,000원의 요금이 부과될 수 있습니다. 출국 전 반드시 로밍 요금제 가입을 권유!"
+          }
+        },
+        {
+          "id": "s6.2",
+          "title": "로밍 요금제",
+          "keywords": ["baro로밍", "로밍요금제", "로밍패스", "데이터로밍무제한"],
+          "content": {
+            "baro_roaming": [
+              { "name": "baro 로밍 데이터 무제한", "daily_fee": 14900, "data": "무제한(1GB 후 3Mbps)", "voice": "미포함", "sms": "미포함", "region": "주요 70개국" },
+              { "name": "baro 로밍 미주", "daily_fee": 12900, "data": "무제한(1GB 후 3Mbps)", "voice": "30분", "sms": "50건", "region": "미국/캐나다" },
+              { "name": "baro 로밍 일본", "daily_fee": 11900, "data": "무제한(1GB 후 3Mbps)", "voice": "30분", "sms": "50건", "region": "일본" },
+              { "name": "baro 로밍 중국", "daily_fee": 11900, "data": "무제한(500MB 후 3Mbps)", "voice": "30분", "sms": "50건", "region": "중국" },
+              { "name": "baro 로밍 동남아", "daily_fee": 11900, "data": "무제한(1GB 후 3Mbps)", "voice": "30분", "sms": "50건", "region": "동남아 주요국" },
+              { "name": "baro 로밍 유럽", "daily_fee": 13900, "data": "무제한(1GB 후 3Mbps)", "voice": "30분", "sms": "50건", "region": "유럽 주요국" }
+            ],
+            "long_term_pass": [
+              { "name": "로밍 패스 7일", "price": 49000, "data": "매일 1GB (후 3Mbps)", "duration": "7일", "region": "주요 70개국" },
+              { "name": "로밍 패스 15일", "price": 79000, "data": "매일 1GB (후 3Mbps)", "duration": "15일", "region": "주요 70개국" },
+              { "name": "로밍 패스 30일", "price": 129000, "data": "매일 1GB (후 3Mbps)", "duration": "30일", "region": "주요 70개국" }
+            ],
+            "subscription_channels": [
+              { "channel": "고객센터 (114)", "timing": "출국 전 / 해외 체류 중", "note": "실시간 적용" },
+              { "channel": "T월드 앱", "timing": "출국 전 / 해외 체류 중", "note": "실시간 적용" },
+              { "channel": "ARS (114)", "timing": "출국 전", "note": null },
+              { "channel": "인천공항 로밍센터", "timing": "출국 당일", "note": "현장 상담 가능" }
+            ]
+          }
+        },
+        {
+          "id": "s6.3",
+          "title": "로밍 데이터 차단/해제",
+          "keywords": ["로밍차단", "로밍해제", "데이터로밍차단", "로밍한도"],
+          "content": {
+            "setting_channels": [
+              { "method": "고객센터 (114)", "channel": "상담원 처리" },
+              { "method": "T월드 앱", "channel": "로밍 설정 메뉴" },
+              { "method": "단말기 설정", "channel": "설정 > 연결 > 데이터 로밍 OFF" }
+            ],
+            "blocking_types": [
+              { "type": "데이터 로밍 전체 차단", "description": "해외에서 데이터 사용 불가", "note": "음성/문자는 사용 가능" },
+              { "type": "데이터 로밍 한도 설정", "description": "설정 금액 초과 시 자동 차단", "note": "기본 5만원 설정" },
+              { "type": "데이터 로밍 해제", "description": "데이터 로밍 이용 가능", "note": "요금제 미가입 시 주의 안내 필수" }
+            ],
+            "tip": "데이터 로밍 해제 요청 시 반드시 로밍 요금제 가입 여부 확인. 요금제 없이 사용 시 고액 요금 발생 가능."
+          }
+        },
+        {
+          "id": "s6.4",
+          "title": "로밍 요금 관련 주의사항",
+          "keywords": ["로밍주의사항", "고액요금", "위성로밍", "로밍상한제"],
+          "content": {
+            "prevention_before_departure": [
+              "데이터 로밍 요금제 가입 권유",
+              "앱 자동 업데이트/백그라운드 데이터 사용 OFF 안내",
+              "데이터 로밍 한도 설정 안내"
+            ],
+            "cautions_abroad": [
+              "Wi-Fi 우선 사용 권유",
+              "요금제 미가입 시 데이터 차단 상태 유지 권유",
+              "선박/항공기 위성 로밍 사용 주의 (고액 요금 발생)"
+            ],
+            "common_high_bill_cases": [
+              "로밍 요금제 미가입 상태에서 데이터 사용",
+              "크루즈/페리에서 해상(위성) 로밍 사용",
+              "국경 지역에서 의도치 않은 타국 로밍 연결",
+              "앱 자동 업데이트/클라우드 동기화로 대량 데이터 사용"
+            ],
+            "rate_cap": {
+              "daily_maximum": 50000,
+              "description": "일일 최대 청구 금액 (요금제 미가입 시)",
+              "action": "상한 도달 시 자동 차단 후 SMS 안내"
+            }
+          }
+        },
+        {
+          "id": "s6.5",
+          "title": "귀국 후 로밍 요금 정산",
+          "keywords": ["로밍정산", "귀국후", "로밍이의신청"],
+          "content": {
+            "billing_timing": {
+              "음성_문자": "이용 익월 청구",
+              "데이터": "이용 익월 청구",
+              "요금제_일정액": "이용일 기준 익월 청구"
+            },
+            "post_return_checklist": [
+              "로밍 요금제 자동 종료 확인 (일정액형은 귀국 후 자동 종료)",
+              "데이터 로밍 차단 설정 원복 확인",
+              "로밍 요금 상세 내역 조회 안내 (T월드 앱)"
+            ],
+            "dispute": {
+              "period": "청구일로부터 6개월 이내",
+              "reasons": "미인지 사용, 요금제 적용 오류, 네트워크 자동 연결 피해 등",
+              "processing_time": "접수 후 14일 이내"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ch07",
+      "title": "부가 업무",
+      "page_range": "36~40",
+      "sections": [
+        {
+          "id": "s7.1",
+          "title": "명의변경",
+          "keywords": ["명의변경", "승계", "양도양수", "명의이전"],
+          "content": {
+            "types": [
+              { "type": "승계", "description": "가족 간 명의 이전 (상속 등)", "fee": "무료" },
+              { "type": "양도양수", "description": "제3자에게 명의 이전", "fee": 5500 }
+            ],
+            "documents": {
+              "transferor": "신분증 원본 (+ 양도동의서 for 양도양수)",
+              "transferee": "신분증 원본",
+              "승계_additional": "가족관계증명서",
+              "proxy": "위임장 + 명의자 신분증 사본"
+            },
+            "cautions": [
+              "잔여 할부금: 양수인으로 이전 (양수인 동의 필요)",
+              "약정: 양수인이 잔여 약정 승계",
+              "미납요금: 양도인이 납부 완료 후 명의변경 가능",
+              "부가서비스: 유지 또는 해지 선택 가능",
+              "T멤버십/포인트: 양도인 포인트는 이전 불가 (소멸)",
+              "처리 채널: 대리점/직영점 방문만 가능 (고객센터 전화 불가)"
+            ]
+          }
+        },
+        {
+          "id": "s7.2",
+          "title": "일시정지/재개통",
+          "keywords": ["일시정지", "재개통", "분실정지", "군입대정지", "장기미사용"],
+          "content": {
+            "suspension_types": [
+              { "type": "장기 미사용 정지", "duration": "최대 3개월", "fee": "기본료 면제", "note": "분실/군입대 등 사유 필요" },
+              { "type": "분실 정지", "duration": "제한 없음", "fee": "기본료 면제", "note": "분실 신고 시 즉시 처리" },
+              { "type": "군입대 정지", "duration": "복무 기간", "fee": "기본료 면제", "note": "입영통지서 등 필요" }
+            ],
+            "during_suspension": {
+              "음성_문자": "사용 불가",
+              "데이터": "사용 불가",
+              "할부금": "정상 청구 (정지와 무관)",
+              "약정기간": "정지 기간만큼 연장",
+              "부가서비스": "정지 (일부 서비스 해지 필요)",
+              "번호유지": "유지됨"
+            },
+            "reactivation_procedure": [
+              "본인확인 수행",
+              "정지 사유 해소 확인",
+              "재개통 처리 (즉시 적용)",
+              "부가서비스 재활성화 확인"
+            ]
+          }
+        },
+        {
+          "id": "s7.3",
+          "title": "해지 처리 및 해지방어 가이드",
+          "keywords": ["해지", "해지방어", "해지위약금", "해지절차", "고객유지"],
+          "content": {
+            "cancellation_procedure": [
+              "본인확인 수행",
+              "해지 사유 확인",
+              "해지방어 진행",
+              "해지 시 발생 비용 안내 (위약금, 잔여 할부금 등)",
+              "해지 후 불이익 안내 (포인트 소멸, 번호 상실 등)",
+              "고객 최종 해지 의사 확인",
+              "해지 처리",
+              "해지 확인 SMS 발송"
+            ],
+            "retention_scripts": {
+              "high_cost": "현재보다 합리적인 요금제 안내 + 월 절감 금액 제시",
+              "poor_quality": "품질 개선 요청 접수 + Wi-Fi 통화 기능 안내",
+              "competitor_offer": "장기고객 혜택/T멤버십 등급/포인트 소멸 안내"
+            },
+            "retention_benefits": [
+              { "benefit": "요금 할인", "detail": "3~6개월 요금 할인 (최대 30%)", "authority": "팀장 승인" },
+              { "benefit": "포인트 지급", "detail": "T포인트 추가 지급", "authority": "팀장 승인" },
+              { "benefit": "요금제 프로모션", "detail": "한정 프로모션 요금제 안내", "authority": "해지방어팀 전용" },
+              { "benefit": "부가서비스 무료", "detail": "특정 부가서비스 무료 제공", "authority": "상담원 가능" }
+            ],
+            "settlement_items": [
+              "약정 위약금: 공시지원금 또는 선택약정 잔여분",
+              "잔여 할부금: 단말기 할부 잔여분 일시 청구",
+              "미납 요금: 미납 요금 즉시 정산",
+              "일할 정산: 해지월 기본료 일할 계산",
+              "포인트/멤버십: 전액 소멸"
+            ]
+          }
+        },
+        {
+          "id": "s7.4",
+          "title": "번호변경",
+          "keywords": ["번호변경", "전화번호변경"],
+          "content": {
+            "info": {
+              "fee": 2750,
+              "channels": ["고객센터(114)", "대리점/직영점"],
+              "processing_time": "즉시 처리",
+              "number_selection": "시스템에서 제시하는 번호 중 선택"
+            },
+            "cautions": [
+              "기존 번호는 변경 후 즉시 사용 불가 (타인에게 재배정)",
+              "기존 번호로 연락하는 사람에게 번호 변경 안내 필요",
+              "각종 서비스(은행, 간편결제 등) 등록 번호 변경 필요",
+              "약정/할부/부가서비스 등은 그대로 유지"
+            ]
+          }
+        },
+        {
+          "id": "s7.5",
+          "title": "청구서 주소/수단 변경",
+          "keywords": ["청구서", "청구서변경", "이메일청구서", "우편청구서"],
+          "content": {
+            "delivery_methods": [
+              { "method": "이메일 청구서", "description": "등록된 이메일로 발송", "fee": "무료" },
+              { "method": "모바일 청구서", "description": "T월드 앱 알림", "fee": "무료" },
+              { "method": "문자 청구서", "description": "SMS로 요약 정보 발송", "fee": "무료" },
+              { "method": "우편 청구서", "description": "등록 주소로 우편 발송", "fee": "월 150원" }
+            ],
+            "change_info": {
+              "channels": ["고객센터(114)", "T월드 앱/웹"],
+              "effective": "변경 신청 익월부터 적용",
+              "requirement": "주소 변경 시 본인확인 필수"
+            }
+          }
+        },
+        {
+          "id": "s7.6",
+          "title": "위임장 처리 기준",
+          "keywords": ["위임장", "대리인", "위임처리"],
+          "content": {
+            "required_tasks": [
+              { "task": "요금제 변경", "proxy_required": true, "additional": "명의자 신분증 사본" },
+              { "task": "부가서비스 가입/해지", "proxy_required": true, "additional": "명의자 신분증 사본" },
+              { "task": "해지", "proxy_required": true, "additional": "명의자 신분증 사본 + 인감증명서" },
+              { "task": "명의변경", "proxy_required": true, "additional": "양도/양수인 각각 서류" },
+              { "task": "기기변경", "proxy_required": true, "additional": "명의자 신분증 사본" },
+              { "task": "요금 조회", "proxy_required": false, "additional": "일부만 안내" }
+            ],
+            "form_requirements": [
+              "명의자 성명, 생년월일, 연락처",
+              "위임 내용 (구체적 업무 명시)",
+              "대리인 성명, 생년월일, 연락처",
+              "명의자 서명 또는 날인",
+              "작성일자"
+            ],
+            "validity": {
+              "default": "작성일로부터 30일 이내",
+              "custom": "위임장에 별도 유효기간 명시 시 해당 기간 적용",
+              "format": "팩스/스캔본 가능 (원본 아니어도 가능하나, 팀장 확인 필요)"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ch08",
+      "title": "네트워크/품질 관련",
+      "page_range": "41~44",
+      "sections": [
+        {
+          "id": "s8.1",
+          "title": "통화품질 불량 신고 접수",
+          "keywords": ["통화품질", "통화끊김", "잡음", "불량신고", "트러블슈팅"],
+          "content": {
+            "report_procedure": [
+              "고객 불만 내용 청취 (증상, 발생 장소, 빈도)",
+              "기본 트러블슈팅 시도 (재부팅, USIM 재장착, 네트워크 설정 초기화)",
+              "해결 안 될 경우 품질 신고 접수",
+              "접수 내용: 회선번호, 단말기 모델, 장소(주소/건물명/층수), 증상, 시간/빈도",
+              "처리 예정일 안내 (접수 후 3~5영업일)"
+            ],
+            "troubleshooting": [
+              { "symptom": "통화 끊김", "check": "이동 중 여부, 지하/실내 여부", "action": "단말 재부팅, Wi-Fi 통화 안내" },
+              { "symptom": "통화 불연결", "check": "특정 번호/전체 여부", "action": "네트워크 설정 초기화" },
+              { "symptom": "잡음/노이즈", "check": "특정 장소/항상 여부", "action": "USIM 재장착, 서비스센터 안내" },
+              { "symptom": "한쪽만 들림", "check": "발신/수신 여부", "action": "단말기 마이크/스피커 점검" }
+            ]
+          }
+        },
+        {
+          "id": "s8.2",
+          "title": "데이터 속도저하 문의 대응",
+          "keywords": ["속도저하", "데이터속도", "속도제한", "데이터소진"],
+          "content": {
+            "cause_analysis": [
+              { "cause": "데이터 소진", "check": "잔여 데이터 조회", "action": "데이터 쿠폰/리필 안내" },
+              { "cause": "일일 제한 도달", "check": "요금제 일일 한도 확인", "action": "다음 날 자동 해제 안내" },
+              { "cause": "네트워크 혼잡", "check": "지역/시간대 확인", "action": "시간대 변경 또는 Wi-Fi 안내" },
+              { "cause": "단말기 문제", "check": "APN 설정 확인", "action": "네트워크 설정 초기화" },
+              { "cause": "기지국 장애", "check": "장애 이력 확인", "action": "장애 처리팀 이관" }
+            ],
+            "throttle_standards": [
+              { "plan_type": "완전무제한", "threshold": "없음", "throttled_speed": "제한 없음" },
+              { "plan_type": "무제한 (일 제한)", "threshold": "일일 데이터 한도 초과", "throttled_speed": "5Mbps 또는 3Mbps" },
+              { "plan_type": "정량형", "threshold": "월간 데이터 소진", "throttled_speed": "1Mbps 또는 400Kbps" }
+            ]
+          }
+        },
+        {
+          "id": "s8.3",
+          "title": "기지국/커버리지 관련 안내",
+          "keywords": ["기지국", "커버리지", "음영지역", "5G커버리지"],
+          "content": {
+            "coverage_info": {
+              "5G": "주요 도심, 대학가, 주요 상권 중심 (지속 확대 중)",
+              "LTE": "전국 99% 이상",
+              "check_method": "T월드 앱 > 나의 이용현황 > 5G/LTE 커버리지 맵"
+            },
+            "dead_zone_handling": "해당 지역 커버리지 미포함 안내 + 네트워크 확대 계획 확인 요청 + Wi-Fi 통화 기능 안내",
+            "base_station_request": {
+              "handling": "고객 요청 접수 후 네트워크팀 이관",
+              "decision": "내부 검토 후 결정 (고객에게 즉답 불가)",
+              "processing_time": "검토까지 약 1~2주"
+            }
+          }
+        },
+        {
+          "id": "s8.4",
+          "title": "장애 발생 시 대응 매뉴얼",
+          "keywords": ["장애", "서비스장애", "네트워크장애", "장애보상", "긴급복구"],
+          "content": {
+            "severity_levels": [
+              { "level": 1, "name": "대규모", "criteria": "광역 지역 서비스 불가", "response": "즉시 전사 공지, 긴급 복구팀 투입" },
+              { "level": 2, "name": "중규모", "criteria": "특정 지역/서비스 장애", "response": "네트워크팀 긴급 대응" },
+              { "level": 3, "name": "소규모", "criteria": "개별 기지국 장애", "response": "일반 복구 절차" }
+            ],
+            "agent_actions": [
+              "내부 공지 시스템에서 현재 장애 현황 확인",
+              "장애 사실 인정 + 복구 예정 시간 안내",
+              "장애 영향 고객 접수 (보상 처리를 위한 기록)",
+              "장애 복구 시 업데이트 안내"
+            ],
+            "compensation": [
+              { "type": "전면 장애 3시간 이상", "compensation": "기본료 일할 감면" },
+              { "type": "전면 장애 24시간 이상", "compensation": "기본료 일할 감면 + 추가 보상 (데이터 쿠폰 등)" },
+              { "type": "부분 장애 장시간", "compensation": "개별 심사 후 결정" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ch09",
+      "title": "고객 불만/VOC 처리",
+      "page_range": "45~48",
+      "sections": [
+        {
+          "id": "s9.1",
+          "title": "불만 등급별 처리 기준",
+          "keywords": ["VOC", "불만처리", "불만등급", "VIP", "긴급민원"],
+          "content": {
+            "voc_levels": [
+              { "level": "일반", "criteria": "단순 불만, 서비스 개선 요청", "deadline": "3영업일 이내", "authority": "상담원" },
+              { "level": "긴급", "criteria": "반복 불만, 요금 피해, 서비스 장애", "deadline": "1영업일 이내", "authority": "팀장" },
+              { "level": "VIP/위기", "criteria": "언론 노출 우려, 소송 예고, VIP 고객", "deadline": "즉시", "authority": "센터장" }
+            ],
+            "procedures": {
+              "일반": [
+                "고객 불만 내용 경청",
+                "공감 표현 및 사과",
+                "원인 파악 및 해결 방안 제시",
+                "처리 완료 후 결과 안내",
+                "상담 이력 기록"
+              ],
+              "긴급": [
+                "고객 불만 내용 경청",
+                "즉시 팀장에게 보고",
+                "팀장 승인하에 긴급 처리",
+                "처리 완료 후 고객에게 콜백",
+                "재발 방지 대책 검토"
+              ],
+              "VIP_위기": [
+                "고객 불만 내용 경청 (절대 반박하지 않음)",
+                "최대한 공감 표현",
+                "즉시 센터장/QA팀에 보고",
+                "전담 인력 배정",
+                "해결 시까지 지속 관리"
+              ]
+            }
+          }
+        },
+        {
+          "id": "s9.2",
+          "title": "에스컬레이션 절차",
+          "keywords": ["에스컬레이션", "상위담당자", "이관", "콜전환"],
+          "content": {
+            "escalation_criteria": [
+              { "situation": "상담원 권한 초과 요금 환불", "target": "팀장" },
+              { "situation": "반복 민원 (3회 이상)", "target": "팀장 → QA팀" },
+              { "situation": "고객이 상위 책임자 요구", "target": "팀장 (즉시 연결)" },
+              { "situation": "법적 조치 언급", "target": "팀장 → 법무팀" },
+              { "situation": "언론/SNS 노출 우려", "target": "센터장 → 홍보팀" },
+              { "situation": "개인정보 사고", "target": "정보보호팀 (즉시)" }
+            ],
+            "procedure": [
+              "고객에게 상위 담당자 연결 안내",
+              "팀장/담당자에게 상황 브리핑",
+              "콜 전환 또는 콜백 약속",
+              "처리 결과 추적 및 기록"
+            ],
+            "cautions": [
+              "제가 처리할 수 있는 범위가 아닙니다 라고 직접적으로 말하지 않기",
+              "대신 '더 정확한 안내를 위해 전문 담당자를 연결해 드리겠습니다'로 안내",
+              "에스컬레이션 후에도 최종 처리 결과를 확인하여 상담 이력에 기록"
+            ]
+          }
+        },
+        {
+          "id": "s9.3",
+          "title": "보상 정책 및 처리 권한",
+          "keywords": ["보상", "보상정책", "보상권한", "요금감면", "포인트지급"],
+          "content": {
+            "compensation_types": [
+              { "type": "요금 감면", "description": "해당 서비스 이용료 감면", "situation": "서비스 장애, 과금 오류" },
+              { "type": "데이터 보상", "description": "추가 데이터 제공", "situation": "데이터 장애, 속도 저하" },
+              { "type": "포인트 지급", "description": "T포인트 추가 지급", "situation": "일반 불편 보상" },
+              { "type": "부가서비스 무료", "description": "일정 기간 무료", "situation": "서비스 불만 해소" },
+              { "type": "요금 면제", "description": "특정 요금 항목 면제", "situation": "중대 과실, 반복 장애" }
+            ],
+            "authority_matrix": {
+              "상담원": { "max_amount": 5000 },
+              "팀장": { "max_amount": 10000 },
+              "센터장": { "max_amount": 50000 },
+              "요금정산팀": { "max_amount": "unlimited" }
+            },
+            "cautions": [
+              "보상은 반드시 정당한 사유가 있어야 함",
+              "보상 내역은 시스템에 사유와 함께 기록",
+              "동일 건에 대한 중복 보상 불가",
+              "고객 과실이 명확한 경우 보상 대상이 아님"
+            ]
+          }
+        },
+        {
+          "id": "s9.4",
+          "title": "민원 접수 대응",
+          "keywords": ["민원", "KAIT", "방통위", "소보원", "외부민원"],
+          "content": {
+            "external_agencies": [
+              { "agency": "한국정보통신진흥협회", "abbreviation": "KAIT", "type": "통신 관련 민원 중재" },
+              { "agency": "방송통신위원회", "abbreviation": "방통위", "type": "방송통신 관련 민원 처리" },
+              { "agency": "한국소비자원", "abbreviation": "소보원", "type": "소비자 피해 구제" }
+            ],
+            "handling_procedure": [
+              "민원 접수 확인 (내부 시스템에 자동 등록)",
+              "담당 부서(민원처리팀) 즉시 이관",
+              "고객 접촉 및 해결 방안 협의",
+              "민원 기관 회신 기한 내 처리 (보통 14일)",
+              "처리 결과 민원 기관에 회신",
+              "사후 모니터링"
+            ],
+            "prevention_guidelines": [
+              "민원 제기 자체를 막거나 부정적으로 반응하지 않기",
+              "민원 제기는 고객의 정당한 권리임을 인정",
+              "가능한 내부 해결을 우선 시도하되 강요하지 않기"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ch10",
+      "title": "부록",
+      "page_range": "49~50",
+      "sections": [
+        {
+          "id": "s10.1",
+          "title": "자주 묻는 질문(FAQ) 요약",
+          "keywords": ["FAQ", "자주묻는질문"],
+          "content": {
+            "billing_faq": [
+              { "q": "이번 달 요금이 왜 이렇게 많이 나왔나요?", "a": "청구서 상세 내역을 확인하여 기본료 외 추가 항목(소액결제, 콘텐츠이용료, 로밍 등)을 안내합니다." },
+              { "q": "요금제를 변경하면 바로 적용되나요?", "a": "즉시 적용과 익월 적용 중 선택 가능합니다. 즉시 적용 시 일할 계산됩니다." },
+              { "q": "자동이체 할인은 얼마인가요?", "a": "은행 자동이체 시 월 300원 할인됩니다." },
+              { "q": "미납하면 어떻게 되나요?", "a": "납기 후 약 15일째부터 발신 정지, 30일째부터 전면 정지, 60일 후 직권 해지될 수 있습니다." }
+            ],
+            "data_plan_faq": [
+              { "q": "데이터를 다 쓰면 어떻게 되나요?", "a": "요금제에 따라 속도 제한(1Mbps/400Kbps 등)되며, 추가 데이터 구매가 가능합니다." },
+              { "q": "5G 요금제를 쓰려면 5G폰이 필요한가요?", "a": "네, 5G 속도를 이용하려면 5G 지원 단말이 필요합니다. LTE폰에서는 LTE 속도로 이용됩니다." },
+              { "q": "가족끼리 데이터를 나눠 쓸 수 있나요?", "a": "T가족모아 데이터 나눠쓰기 서비스를 이용하시면 가능합니다." },
+              { "q": "해외에서 데이터를 쓰려면 어떻게 하나요?", "a": "출국 전 로밍 요금제(baro 로밍 등)에 가입하시는 것을 권장합니다." }
+            ],
+            "device_faq": [
+              { "q": "자급제폰도 SKT에서 쓸 수 있나요?", "a": "네, SKT 호환 단말이면 USIM 또는 eSIM으로 개통 가능합니다." },
+              { "q": "할부금을 한 번에 갚을 수 있나요?", "a": "네, 잔여 할부금을 수수료 없이 일시 납부 가능합니다." },
+              { "q": "핸드폰을 잃어버렸어요, 어떻게 하나요?", "a": "즉시 분실 신고(114 또는 1599-0011)를 하여 이용을 정지하세요." },
+              { "q": "eSIM은 어떻게 개통하나요?", "a": "T월드 앱이나 대리점에서 eSIM을 신청하시면 QR 코드가 발급됩니다." }
+            ],
+            "service_faq": [
+              { "q": "T멤버십 등급은 어떻게 결정되나요?", "a": "월정액 또는 가입 기간 기준으로 VIP+/VIP/골드/실버 등급이 결정됩니다." },
+              { "q": "소액결제를 차단하고 싶어요", "a": "고객센터(114) 또는 T월드에서 즉시 차단 가능합니다." },
+              { "q": "명의변경은 어디서 하나요?", "a": "대리점 또는 직영점에 양도인/양수인이 함께 방문해야 합니다." },
+              { "q": "해지하면 위약금이 얼마인가요?", "a": "약정 종류(공시지원금/선택약정)와 잔여 기간에 따라 다릅니다. 정확한 금액은 시스템에서 확인해 드리겠습니다." }
+            ]
+          }
+        },
+        {
+          "id": "s10.2",
+          "title": "내부 시스템 코드 및 업무 단축키",
+          "keywords": ["시스템코드", "단축키", "업무코드"],
+          "content": {
+            "system_codes": [
+              { "code": "RC01", "task": "요금제 변경" },
+              { "code": "RC02", "task": "부가서비스" },
+              { "code": "RC03", "task": "요금 조회" },
+              { "code": "RC04", "task": "납부 처리" },
+              { "code": "RC05", "task": "기기변경" },
+              { "code": "RC06", "task": "해지" },
+              { "code": "RC07", "task": "일시정지" },
+              { "code": "RC08", "task": "명의변경" },
+              { "code": "RC09", "task": "분실접수" },
+              { "code": "RC10", "task": "품질신고" },
+              { "code": "RC11", "task": "VOC접수" },
+              { "code": "RC12", "task": "로밍설정" }
+            ],
+            "shortcuts": [
+              { "key": "F1", "function": "고객 정보 조회" },
+              { "key": "F2", "function": "요금 조회" },
+              { "key": "F3", "function": "상담 이력 조회" },
+              { "key": "F4", "function": "요금제 정보" },
+              { "key": "F5", "function": "부가서비스 정보" },
+              { "key": "F6", "function": "상담 메모 입력" },
+              { "key": "F7", "function": "문자 발송" },
+              { "key": "F8", "function": "콜 전환" },
+              { "key": "F9", "function": "상담 완료" },
+              { "key": "F10", "function": "에스컬레이션" },
+              { "key": "Ctrl+S", "function": "상담 내용 저장" },
+              { "key": "Ctrl+P", "function": "고객 정보 출력" }
+            ]
+          }
+        },
+        {
+          "id": "s10.3",
+          "title": "유관부서 연락처",
+          "keywords": ["연락처", "내선번호", "유관부서", "외부기관"],
+          "content": {
+            "internal_departments": [
+              { "department": "요금정산팀", "extension": "2100", "task": "요금 이의/환불 (5만원 초과)" },
+              { "department": "해지방어팀", "extension": "2200", "task": "해지 고객 특별 제안" },
+              { "department": "네트워크품질팀", "extension": "2300", "task": "통화/데이터 품질 장애" },
+              { "department": "로밍서비스팀", "extension": "2400", "task": "로밍 관련 전문 상담" },
+              { "department": "법인사업팀", "extension": "2500", "task": "법인 고객 전담" },
+              { "department": "정보보호팀", "extension": "9119", "task": "개인정보 사고 대응" },
+              { "department": "QA팀", "extension": "2600", "task": "상담 품질 관리" },
+              { "department": "민원처리팀", "extension": "2700", "task": "외부 민원 대응" },
+              { "department": "법무팀", "extension": "2800", "task": "법적 분쟁/소송 대응" }
+            ],
+            "external_agencies": [
+              { "agency": "KAIT 한국정보통신진흥협회", "contact": "02-580-0580", "purpose": "통신 분쟁 중재" },
+              { "agency": "방송통신위원회", "contact": "1335", "purpose": "방송통신 민원" },
+              { "agency": "한국소비자원", "contact": "1372", "purpose": "소비자 피해 구제" },
+              { "agency": "경찰청 사이버수사대", "contact": "182", "purpose": "스미싱/사기 신고" },
+              { "agency": "NICE 신용평가", "contact": "1588-2486", "purpose": "신용 정보 조회" },
+              { "agency": "분실폰 찾기", "contact": "1599-0011", "purpose": "분실 신고 전용" }
+            ],
+            "customer_channels": [
+              { "channel": "SKT 고객센터", "contact": "114 (SKT 폰) / 080-011-6000 (타 전화)", "hours": "ARS 24시간, 상담원 09:00~18:00" },
+              { "channel": "T월드 웹", "contact": "www.tworld.co.kr", "hours": "24시간" },
+              { "channel": "T월드 앱", "contact": "App Store / Google Play", "hours": "24시간" },
+              { "channel": "SKT 카카오톡 채널", "contact": "SK텔레콤 검색", "hours": "챗봇 + 상담원 연결" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
