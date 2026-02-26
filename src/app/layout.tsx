@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SKT 상담 매뉴얼 검색",
-  description: "SK텔레콤 고객센터 상담 매뉴얼 시맨틱 검색 시스템",
+  title: "통신사 상담 매뉴얼 검색",
+  description: "통신사 고객센터 상담 매뉴얼 시맨틱 검색 시스템",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

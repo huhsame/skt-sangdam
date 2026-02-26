@@ -10,7 +10,7 @@ async function extractKeywords(query: string): Promise<string[]> {
       messages: [
         {
           role: "system",
-          content: `SK텔레콤 고객센터 매뉴얼 검색 시스템입니다.
+          content: `통신사 고객센터 매뉴얼 검색 시스템입니다.
 고객의 질문에서 매뉴얼 검색용 핵심 키워드를 추출하세요.
 고객의 구어체를 통신사 공식 용어로 변환하고, 동의어도 포함하세요.
 

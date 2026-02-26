@@ -393,7 +393,7 @@ const fullHTML = `<!DOCTYPE html>
 
 <!-- 표지 -->
 <div class="cover-page">
-  <div class="cover-logo">SK TELECOM</div>
+  <div class="cover-logo">TELECOM</div>
   <div class="cover-divider"></div>
   <div class="cover-title">고객센터<br>상담 매뉴얼</div>
   <div class="cover-subtitle">모바일 통신 서비스</div>
@@ -401,7 +401,7 @@ const fullHTML = `<!DOCTYPE html>
   <div class="cover-meta">
     <div>버전 2025.01 | 최종 수정일 2025-01-15</div>
     <div>배포 대상: 고객센터 상담원 전원</div>
-    <div style="margin-top: 3mm;">SK텔레콤 고객서비스본부</div>
+    <div style="margin-top: 3mm;">통신사 고객서비스본부</div>
   </div>
 </div>
 
@@ -537,13 +537,13 @@ ${htmlBody}
     displayHeaderFooter: true,
     headerTemplate: `
       <div style="width: 100%; font-size: 7pt; color: #999; padding: 0 15mm; display: flex; justify-content: space-between; font-family: -apple-system, sans-serif;">
-        <span>SKT 고객센터 상담 매뉴얼</span>
+        <span>통신사 고객센터 상담 매뉴얼</span>
         <span style="color: #E4002B; font-weight: 600;">대외비</span>
       </div>
     `,
     footerTemplate: `
       <div style="width: 100%; font-size: 7pt; color: #999; padding: 0 15mm; display: flex; justify-content: space-between; font-family: -apple-system, sans-serif;">
-        <span>© 2025 SK텔레콤</span>
+        <span>© 2025 통신사</span>
         <span>- <span class="pageNumber"></span> -</span>
         <span>v2025.01</span>
       </div>

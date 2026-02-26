@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
       .map((c: string, i: number) => `[매뉴얼 ${i + 1}]\n${c}`)
       .join("\n\n");
 
-    const systemPrompt = `당신은 SK텔레콤 AI 상담사입니다. 고객의 문의에 대해 매뉴얼을 기반으로 정확하고 친절하게 응대합니다.
+    const systemPrompt = `당신은 통신사 AI 상담사입니다. 고객의 문의에 대해 매뉴얼을 기반으로 정확하고 친절하게 응대합니다.
 
 규칙:
 - 반드시 제공된 매뉴얼 내용만 기반으로 답변하세요

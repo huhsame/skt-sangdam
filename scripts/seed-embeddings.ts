@@ -54,7 +54,7 @@ async function parsePdfFile(filePath: string) {
 
 // --- 고객 일상어 질문 생성 ---
 async function generateCustomerQuestions(pageText: string): Promise<string[]> {
-  const prompt = `당신은 SK텔레콤 고객센터에 전화하는 고객입니다.
+  const prompt = `당신은 통신사 고객센터에 전화하는 고객입니다.
 다음 매뉴얼 페이지 내용과 관련하여 고객이 실제로 할 수 있는 일상적인 질문 예시를 10개 생성해주세요.
 전문 용어 없이 구어체로 작성하세요.
 
