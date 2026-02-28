@@ -399,7 +399,7 @@ const fullHTML = `<!DOCTYPE html>
   <div class="cover-subtitle">모바일 통신 서비스</div>
   <div class="cover-badge">대 외 비</div>
   <div class="cover-meta">
-    <div>버전 2025.01 | 최종 수정일 2025-01-15</div>
+    <div>버전 2026.02 | 최종 수정일 2026-02-28</div>
     <div>배포 대상: 고객센터 상담원 전원</div>
     <div style="margin-top: 3mm;">통신사 고객서비스본부</div>
   </div>
@@ -543,9 +543,9 @@ ${htmlBody}
     `,
     footerTemplate: `
       <div style="width: 100%; font-size: 7pt; color: #999; padding: 0 15mm; display: flex; justify-content: space-between; font-family: -apple-system, sans-serif;">
-        <span>© 2025 통신사</span>
+        <span>© 2026 통신사</span>
         <span>- <span class="pageNumber"></span> -</span>
-        <span>v2025.01</span>
+        <span>v2026.02</span>
       </div>
     `,
   });
