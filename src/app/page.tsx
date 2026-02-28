@@ -52,9 +52,9 @@ export default function Home() {
   return (
     <div className="h-screen flex flex-col">
       {/* 헤더 */}
-      <header className="bg-[#E4002B] text-white px-6 py-3 flex items-center justify-between shrink-0">
+      <header className="bg-[#E6007E] text-white px-6 py-3 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-3">
-          <h1 className="text-lg font-bold tracking-tight">통신사 상담 매뉴얼</h1>
+          <h1 className="text-lg font-bold tracking-tight">LG U+ 상담 매뉴얼</h1>
           <span className="text-xs bg-white/20 px-2 py-0.5 rounded">v2026.02</span>
         </div>
         <span className="text-xs opacity-75">시맨틱 검색 시스템</span>

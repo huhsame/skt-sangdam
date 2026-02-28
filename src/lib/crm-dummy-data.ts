@@ -2,7 +2,7 @@ export const CUSTOMER = {
   name: "김민수",
   phone: "010-1234-5678",
   grade: "VIP",
-  plan: "T플랜 에센셜",
+  plan: "5G 시그니처 에센셜",
   joinDate: "2021-03-15",
   contractEnd: "2025-09-14",
   device: "Galaxy S24 Ultra",
@@ -15,21 +15,21 @@ export const CUSTOMER = {
 export const ROAMING_DATA = {
   currentStatus: "미신청",
   products: [
-    { name: "baro 로밍 데이터", region: "유럽/미주", price: "11,000원/일", data: "무제한(1GB후 속도제한)" },
-    { name: "baro 로밍 데이터 미니", region: "유럽/미주", price: "7,700원/일", data: "500MB" },
-    { name: "baro 로밍 OnePass", region: "전세계", price: "33,000원/5일", data: "5GB" },
-    { name: "T로밍 데이터 무제한", region: "아시아", price: "9,900원/일", data: "무제한" },
+    { name: "U+ 로밍 데이터 무제한", region: "유럽/미주", price: "11,000원/일", data: "무제한(1GB후 속도제한)" },
+    { name: "U+ 로밍 데이터 미니", region: "유럽/미주", price: "7,700원/일", data: "500MB" },
+    { name: "U+ 로밍 글로벌 5일", region: "전세계", price: "33,000원/5일", data: "5GB" },
+    { name: "U+ 로밍 아시아 무제한", region: "아시아", price: "9,900원/일", data: "무제한" },
   ],
   regions: ["유럽", "미주", "아시아", "일본", "중국", "동남아", "대양주"],
 };
 
 export const PLAN_DATA = {
-  current: { name: "T플랜 에센셜", data: "100GB", call: "무제한", message: "무제한", price: "69,000원" },
+  current: { name: "5G 시그니처 에센셜", data: "100GB", call: "무제한", message: "무제한", price: "69,000원" },
   available: [
-    { name: "T플랜 스페셜", data: "150GB", call: "무제한", message: "무제한", price: "79,000원", diff: "+10,000원" },
-    { name: "T플랜 프리미엄", data: "무제한", call: "무제한", message: "무제한", price: "99,000원", diff: "+30,000원" },
-    { name: "T플랜 라이트", data: "50GB", call: "무제한", message: "무제한", price: "55,000원", diff: "-14,000원" },
-    { name: "0 청년 요금제", data: "60GB", call: "무제한", message: "무제한", price: "55,000원", diff: "-14,000원" },
+    { name: "5G 시그니처 스페셜", data: "150GB", call: "무제한", message: "무제한", price: "79,000원", diff: "+10,000원" },
+    { name: "5G 시그니처", data: "무제한", call: "무제한", message: "무제한", price: "99,000원", diff: "+30,000원" },
+    { name: "5G 라이트", data: "50GB", call: "무제한", message: "무제한", price: "55,000원", diff: "-14,000원" },
+    { name: "유쓰 라이트", data: "60GB", call: "무제한", message: "무제한", price: "55,000원", diff: "-14,000원" },
   ],
 };
 
@@ -45,7 +45,7 @@ export const DEVICE_DATA = {
 
 export const LOST_STOLEN_DATA = {
   deviceStatus: "정상",
-  insuranceStatus: "T안심보험 가입",
+  insuranceStatus: "U+안심보험 가입",
   insuranceFee: "월 9,900원",
   options: [
     { label: "분실 정지", desc: "일시정지 후 복구 가능", color: "yellow" },
@@ -74,12 +74,12 @@ export const CANCELLATION_DATA = {
 export const DATA_ADDON_DATA = {
   usage: { used: 42.3, total: 100, unit: "GB", resetDate: "2025-02-01" },
   addons: [
-    { name: "T 데이터 리필 쿠폰 1GB", price: "3,300원", active: false },
-    { name: "T 데이터 리필 쿠폰 2GB", price: "5,500원", active: false },
+    { name: "데이터 리필 쿠폰 1GB", price: "3,300원", active: false },
+    { name: "데이터 리필 쿠폰 2GB", price: "5,500원", active: false },
     { name: "통화 매니아", price: "2,200원/월", active: true },
-    { name: "T멤버십 VIP", price: "무료", active: true },
+    { name: "U+멤버십 VIP", price: "무료", active: true },
     { name: "스팸 차단 서비스", price: "무료", active: true },
-    { name: "T가드(안심보험)", price: "9,900원/월", active: true },
+    { name: "U+안심보험", price: "9,900원/월", active: true },
   ],
 };
 
@@ -97,7 +97,7 @@ export const COUNSEL_HISTORY = [
     time: "10:15",
     type: "부가서비스",
     channel: "채팅",
-    summary: "T멤버십 VIP 혜택 안내 및 스팸차단 서비스 가입 처리",
+    summary: "U+멤버십 VIP 혜택 안내 및 스팸차단 서비스 가입 처리",
     agent: "이상담",
   },
   {
@@ -113,7 +113,7 @@ export const COUNSEL_HISTORY = [
     time: "09:30",
     type: "로밍",
     channel: "전화",
-    summary: "일본 여행 로밍 신청 - baro 로밍 데이터 미니 3일 가입",
+    summary: "일본 여행 로밍 신청 - U+ 로밍 데이터 미니 3일 가입",
     agent: "최상담",
   },
 ];
@@ -123,8 +123,8 @@ export const BILLING_HISTORY = [
     month: "2025년 1월",
     total: "78,900원",
     breakdown: [
-      { item: "기본요금 (T플랜 에센셜)", amount: "69,000원" },
-      { item: "T가드(안심보험)", amount: "9,900원" },
+      { item: "기본요금 (5G 시그니처 에센셜)", amount: "69,000원" },
+      { item: "U+안심보험", amount: "9,900원" },
       { item: "할인 (선택약정 25%)", amount: "-17,250원" },
       { item: "부가세", amount: "17,250원" },
     ],
@@ -135,8 +135,8 @@ export const BILLING_HISTORY = [
     month: "2024년 12월",
     total: "82,400원",
     breakdown: [
-      { item: "기본요금 (T플랜 에센셜)", amount: "69,000원" },
-      { item: "T가드(안심보험)", amount: "9,900원" },
+      { item: "기본요금 (5G 시그니처 에센셜)", amount: "69,000원" },
+      { item: "U+안심보험", amount: "9,900원" },
       { item: "데이터 초과 (2GB)", amount: "3,500원" },
       { item: "할인 (선택약정 25%)", amount: "-17,250원" },
       { item: "부가세", amount: "17,250원" },
@@ -148,9 +148,9 @@ export const BILLING_HISTORY = [
     month: "2024년 11월",
     total: "91,700원",
     breakdown: [
-      { item: "기본요금 (T플랜 에센셜)", amount: "69,000원" },
-      { item: "T가드(안심보험)", amount: "9,900원" },
-      { item: "baro 로밍 데이터 미니 3일", amount: "23,100원" },
+      { item: "기본요금 (5G 시그니처 에센셜)", amount: "69,000원" },
+      { item: "U+안심보험", amount: "9,900원" },
+      { item: "U+ 로밍 데이터 미니 3일", amount: "23,100원" },
       { item: "할인 (선택약정 25%)", amount: "-17,250원" },
       { item: "부가세", amount: "6,950원" },
     ],
@@ -188,14 +188,14 @@ export const ROAMING_HISTORY = [
   {
     date: "2024-11-03 ~ 11-05",
     region: "일본",
-    product: "baro 로밍 데이터 미니",
+    product: "U+ 로밍 데이터 미니",
     cost: "23,100원",
     dataUsed: "1.2GB",
   },
   {
     date: "2024-07-15 ~ 07-22",
     region: "유럽 (프랑스)",
-    product: "baro 로밍 데이터",
+    product: "U+ 로밍 데이터 무제한",
     cost: "77,000원",
     dataUsed: "4.8GB",
   },
@@ -210,7 +210,7 @@ export const RETENTION_OFFERS = [
   {
     name: "데이터 무제한 업그레이드",
     desc: "3개월간 데이터 무제한 제공",
-    value: "T플랜 프리미엄 무료 체험",
+    value: "5G 시그니처 무료 체험",
   },
   {
     name: "최신 기기 할인",

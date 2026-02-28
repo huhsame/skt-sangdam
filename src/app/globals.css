@@ -16,7 +16,7 @@ body {
   display: inline-block;
   width: 2px;
   height: 1em;
-  background-color: #E4002B;
+  background-color: #E6007E;
   margin-left: 1px;
   vertical-align: text-bottom;
   animation: cursor-blink 0.8s steps(2) infinite;
@@ -29,15 +29,15 @@ body {
 
 /* CRM highlight (red outline pulse) */
 .crm-highlight {
-  outline: 2px solid #E4002B;
+  outline: 2px solid #E6007E;
   outline-offset: 2px;
   animation: crm-pulse 0.8s 2;
   border-radius: 4px;
 }
 
 @keyframes crm-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(228,0,43,0.4); }
-  50% { box-shadow: 0 0 0 8px rgba(228,0,43,0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(230,0,126,0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(230,0,126,0); }
 }
 
 /* Status change pop */

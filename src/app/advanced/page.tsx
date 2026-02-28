@@ -163,9 +163,9 @@ export default function AdvancedPage() {
   return (
     <div className="h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-[#E4002B] text-white px-6 py-3 flex items-center justify-between shrink-0">
+      <header className="bg-[#E6007E] text-white px-6 py-3 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-3">
-          <h1 className="text-lg font-bold tracking-tight">통신사 AI 상담 시스템</h1>
+          <h1 className="text-lg font-bold tracking-tight">LG U+ AI 상담 시스템</h1>
           <span className="text-xs bg-white/20 px-2 py-0.5 rounded">Advanced</span>
         </div>
         <div className="flex items-center gap-3">
