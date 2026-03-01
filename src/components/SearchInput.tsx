@@ -25,12 +25,12 @@ export default function SearchInput({ value, onChange, isLoading }: SearchInputP
         onChange={(e) => onChange(e.target.value)}
         placeholder="고객 문의 내용을 입력하세요..."
         className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg text-sm
-          focus:outline-none focus:ring-2 focus:ring-[#E4002B] focus:border-transparent
+          focus:outline-none focus:ring-2 focus:ring-[#E6007E] focus:border-transparent
           placeholder-gray-400"
       />
       {isLoading && (
         <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
-          <div className="h-5 w-5 border-2 border-[#E4002B] border-t-transparent rounded-full animate-spin" />
+          <div className="h-5 w-5 border-2 border-[#E6007E] border-t-transparent rounded-full animate-spin" />
         </div>
       )}
     </div>

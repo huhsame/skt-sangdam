@@ -77,7 +77,7 @@ export default function PlanChangeScreen({
                     disabled={!dispatch || isComplete}
                     className={`px-2 py-0.5 rounded text-[10px] transition-all ${
                       plan.selectedPlan === i
-                        ? "bg-[#E4002B] text-white"
+                        ? "bg-[#E6007E] text-white"
                         : "bg-gray-200 text-gray-600 hover:bg-gray-300"
                     } ${!dispatch || isComplete ? "disabled:opacity-50 disabled:cursor-not-allowed" : ""}`}
                   >
@@ -100,7 +100,7 @@ export default function PlanChangeScreen({
         } ${
           isComplete
             ? "bg-green-500 text-white"
-            : "bg-[#E4002B] text-white disabled:opacity-50 disabled:cursor-not-allowed"
+            : "bg-[#E6007E] text-white disabled:opacity-50 disabled:cursor-not-allowed"
         }`}
       >
         {isComplete ? "변경 완료" : "요금제 변경"}

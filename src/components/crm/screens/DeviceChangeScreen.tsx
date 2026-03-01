@@ -49,7 +49,7 @@ export default function DeviceChangeScreen({
             disabled={!dispatch || isComplete}
             className={`flex items-center gap-1.5 border rounded px-2.5 py-1.5 transition-all ${
               device.selectedOption === opt
-                ? "border-[#E4002B] bg-red-50 text-[#E4002B]"
+                ? "border-[#E6007E] bg-red-50 text-[#E6007E]"
                 : "border-gray-200 bg-white text-gray-600"
             } ${!dispatch || isComplete ? "cursor-not-allowed opacity-70" : "cursor-pointer hover:bg-gray-50"} ${
               highlightedElement === `option-${opt}` ? "crm-highlight" : ""
@@ -57,11 +57,11 @@ export default function DeviceChangeScreen({
           >
             <span
               className={`w-3 h-3 rounded-full border-2 flex items-center justify-center ${
-                device.selectedOption === opt ? "border-[#E4002B]" : "border-gray-300"
+                device.selectedOption === opt ? "border-[#E6007E]" : "border-gray-300"
               }`}
             >
               {device.selectedOption === opt && (
-                <span className="w-1.5 h-1.5 rounded-full bg-[#E4002B]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#E6007E]" />
               )}
             </span>
             <span>{opt}</span>
@@ -101,7 +101,7 @@ export default function DeviceChangeScreen({
                     disabled={!dispatch || isComplete}
                     className={`px-2 py-0.5 rounded text-[10px] transition-all ${
                       device.selectedDevice === i
-                        ? "bg-[#E4002B] text-white"
+                        ? "bg-[#E6007E] text-white"
                         : "bg-gray-200 text-gray-600 hover:bg-gray-300"
                     } ${!dispatch || isComplete ? "disabled:opacity-50 disabled:cursor-not-allowed" : ""}`}
                   >
@@ -139,14 +139,14 @@ export default function DeviceChangeScreen({
         } ${
           isComplete
             ? "bg-green-500 text-white"
-            : "bg-[#E4002B] text-white disabled:opacity-50 disabled:cursor-not-allowed"
+            : "bg-[#E6007E] text-white disabled:opacity-50 disabled:cursor-not-allowed"
         }`}
       >
         {isComplete ? "개통 완료" : "기기변경 개통"}
       </button>
 
       <div className="bg-gray-50 border border-gray-200 rounded p-2 text-[11px] text-gray-500">
-        * T안심보험 가입 안내: 기기변경 시 보험 가입을 권장합니다. (월 9,900원)
+        * U+안심보험 가입 안내: 기기변경 시 보험 가입을 권장합니다. (월 9,900원)
       </div>
     </div>
   );

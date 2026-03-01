@@ -68,7 +68,7 @@ export default function TranscriptionPanel({
               ? "bg-gray-300 text-gray-500 cursor-not-allowed"
               : isActive
                 ? "bg-gray-800 hover:bg-gray-900 text-white"
-                : "bg-[#E4002B] hover:bg-[#C00025] text-white"
+                : "bg-[#E6007E] hover:bg-[#C00025] text-white"
           }`}
         >
           {status === "connecting" ? (

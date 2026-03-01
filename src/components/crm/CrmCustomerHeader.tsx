@@ -15,7 +15,7 @@ export default function CrmCustomerHeader() {
       <span className="text-gray-400">|</span>
       <span className="text-gray-400">가입: {CUSTOMER.joinDate}</span>
       <div className="ml-auto">
-        <span className="bg-[#E4002B]/20 text-[#E4002B] px-1.5 py-0.5 rounded text-[10px] font-bold border border-[#E4002B]/30">
+        <span className="bg-[#E6007E]/20 text-[#E6007E] px-1.5 py-0.5 rounded text-[10px] font-bold border border-[#E6007E]/30">
           DEMO
         </span>
       </div>

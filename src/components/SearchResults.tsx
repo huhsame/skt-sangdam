@@ -22,7 +22,7 @@ export default function SearchResults({ results, selectedId, onSelect }: SearchR
             <button
               onClick={() => onSelect(result)}
               className={`w-full text-left px-4 py-3 hover:bg-gray-50 transition-colors ${
-                isSelected ? "bg-red-50 border-l-4 border-[#E4002B]" : ""
+                isSelected ? "bg-red-50 border-l-4 border-[#E6007E]" : ""
               }`}
             >
               <div className="flex items-start justify-between gap-2">

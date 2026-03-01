@@ -78,7 +78,7 @@ export default function LostStolenScreen({
               disabled={!dispatch || isSuspended}
               className={`p-2.5 rounded border-2 text-left transition-all ${
                 lost.selectedOption === opt.label
-                  ? "border-[#E4002B] bg-red-50"
+                  ? "border-[#E6007E] bg-red-50"
                   : opt.color === "red"
                   ? "border-red-300 bg-red-50"
                   : "border-yellow-300 bg-yellow-50"
@@ -123,7 +123,7 @@ export default function LostStolenScreen({
 
       {/* Insurance coverage */}
       <div className="bg-blue-50 border border-blue-200 rounded p-2 text-[11px] text-blue-800">
-        <div className="font-bold mb-1">T안심보험 보장 내용</div>
+        <div className="font-bold mb-1">U+안심보험 보장 내용</div>
         <ul className="space-y-0.5 text-[10px]">
           <li>- 분실/도난: 자기부담금 70,000원 후 보장</li>
           <li>- 파손: 수리비 전액 보장 (연 2회)</li>

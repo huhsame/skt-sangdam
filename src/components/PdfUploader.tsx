@@ -104,7 +104,7 @@ export default function PdfUploader({ onComplete }: PdfUploaderProps) {
         className={`border-2 border-dashed rounded-lg p-4 text-center transition-colors ${
           isUploading
             ? "border-gray-300 bg-gray-50 cursor-default"
-            : "border-gray-300 hover:border-[#E4002B] hover:bg-red-50 cursor-pointer"
+            : "border-gray-300 hover:border-[#E6007E] hover:bg-red-50 cursor-pointer"
         }`}
       >
         <input
@@ -123,7 +123,7 @@ export default function PdfUploader({ onComplete }: PdfUploaderProps) {
             </p>
             <div className="w-full bg-gray-200 rounded-full h-2">
               <div
-                className="bg-[#E4002B] h-2 rounded-full transition-all duration-300"
+                className="bg-[#E6007E] h-2 rounded-full transition-all duration-300"
                 style={{ width: `${pct}%` }}
               />
             </div>

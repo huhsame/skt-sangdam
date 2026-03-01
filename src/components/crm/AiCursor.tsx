@@ -64,14 +64,14 @@ export default function AiCursor({ targetElementId, isRunning, containerRef }: A
             height: 0,
             borderLeft: "6px solid transparent",
             borderRight: "6px solid transparent",
-            borderBottom: "14px solid #E4002B",
+            borderBottom: "14px solid #E6007E",
             transform: "rotate(-30deg)",
             filter: "drop-shadow(1px 1px 2px rgba(0,0,0,0.3))",
           }}
         />
         {/* AI label */}
         <div
-          className="absolute top-3 left-2 bg-[#E4002B] text-white text-[8px] font-bold px-1 py-0.5 rounded shadow"
+          className="absolute top-3 left-2 bg-[#E6007E] text-white text-[8px] font-bold px-1 py-0.5 rounded shadow"
           style={{ whiteSpace: "nowrap" }}
         >
           AI
@@ -88,7 +88,7 @@ export default function AiCursor({ targetElementId, isRunning, containerRef }: A
           }}
         >
           <div
-            className="ai-cursor-ripple w-6 h-6 rounded-full border-2 border-[#E4002B]"
+            className="ai-cursor-ripple w-6 h-6 rounded-full border-2 border-[#E6007E]"
           />
         </div>
       )}

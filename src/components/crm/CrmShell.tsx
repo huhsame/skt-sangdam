@@ -105,7 +105,7 @@ export default function CrmShell({
               }}
               className={`flex flex-col items-center justify-center py-2 px-1 text-[9px] transition-all ${
                 screenType === item.type
-                  ? "bg-[#E4002B] text-white"
+                  ? "bg-[#E6007E] text-white"
                   : "text-gray-400 hover:text-white hover:bg-gray-800"
               }`}
             >
@@ -126,7 +126,7 @@ export default function CrmShell({
                   onClick={() => setActiveTab(tab.type)}
                   className={`px-3 py-1.5 text-[11px] font-medium border-b-2 transition-all ${
                     activeTab === tab.type
-                      ? "border-[#E4002B] text-[#E4002B]"
+                      ? "border-[#E6007E] text-[#E6007E]"
                       : "border-transparent text-gray-500 hover:text-gray-700"
                   }`}
                 >
@@ -155,7 +155,7 @@ export default function CrmShell({
       {(isAutoRunning || completedSteps.length > 0) && (
         <div className="border-t border-gray-200 bg-gray-900 text-white px-3 py-2 text-[11px]">
           <div className="flex items-center gap-2 mb-1">
-            <span className="text-[#E4002B] font-bold">AI</span>
+            <span className="text-[#E6007E] font-bold">AI</span>
             <span className="text-gray-300">자동 실행</span>
             {isAutoRunning && (
               <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />

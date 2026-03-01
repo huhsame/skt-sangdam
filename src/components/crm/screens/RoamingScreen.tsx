@@ -52,7 +52,7 @@ export default function RoamingScreen({
               disabled={!dispatch}
               className={`px-2.5 py-1 rounded border text-[11px] transition-all ${
                 roaming.selectedRegion === r
-                  ? "border-[#E4002B] bg-[#E4002B] text-white"
+                  ? "border-[#E6007E] bg-[#E6007E] text-white"
                   : "border-gray-200 text-gray-600 bg-white hover:bg-gray-50"
               } ${!dispatch ? "disabled:opacity-70 disabled:cursor-not-allowed" : ""} ${
                 highlightedElement === `region-${r}` ? "crm-highlight" : ""
@@ -96,7 +96,7 @@ export default function RoamingScreen({
                     disabled={!dispatch || isComplete}
                     className={`px-2 py-0.5 rounded text-[10px] transition-all ${
                       roaming.selectedProduct === i
-                        ? "bg-[#E4002B] text-white"
+                        ? "bg-[#E6007E] text-white"
                         : "bg-gray-200 text-gray-600 hover:bg-gray-300"
                     } ${!dispatch || isComplete ? "disabled:opacity-50 disabled:cursor-not-allowed" : ""}`}
                   >
@@ -119,7 +119,7 @@ export default function RoamingScreen({
         } ${
           isComplete
             ? "bg-green-500 text-white"
-            : "bg-[#E4002B] text-white disabled:opacity-50 disabled:cursor-not-allowed"
+            : "bg-[#E6007E] text-white disabled:opacity-50 disabled:cursor-not-allowed"
         }`}
       >
         {isComplete ? "신청 완료" : "로밍 신청"}

@@ -29,7 +29,7 @@ export default function DataAddonScreen({
         </div>
         <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
           <div
-            className="h-full bg-gradient-to-r from-[#E4002B] to-[#ff4d6a] rounded-full transition-all"
+            className="h-full bg-gradient-to-r from-[#E6007E] to-[#ff4da6] rounded-full transition-all"
             style={{ width: `${pct}%` }}
           />
         </div>
@@ -59,7 +59,7 @@ export default function DataAddonScreen({
           {DAILY_DATA_USAGE.map((d, i) => (
             <div key={i} className="flex-1 flex flex-col items-center gap-0.5">
               <div
-                className="w-full bg-gradient-to-t from-[#E4002B] to-[#ff4d6a] rounded-t"
+                className="w-full bg-gradient-to-t from-[#E6007E] to-[#ff4da6] rounded-t"
                 style={{ height: `${(d.used / maxUsage) * 100}%` }}
                 title={`${d.used}GB`}
               />
@@ -86,7 +86,7 @@ export default function DataAddonScreen({
                 key={i}
                 data-crm-id={`addon-${i}`}
                 className={`flex items-center justify-between bg-white border rounded px-2.5 py-2 transition-all ${
-                  isSelected ? "border-[#E4002B] bg-red-50" : ""
+                  isSelected ? "border-[#E6007E] bg-red-50" : ""
                 } ${highlightedElement === `addon-${i}` ? "crm-highlight" : ""}`}
               >
                 <div className="flex items-center gap-2">
@@ -109,7 +109,7 @@ export default function DataAddonScreen({
                       disabled={!dispatch}
                       className={`px-2 py-0.5 rounded text-[10px] transition-all ${
                         isSelected
-                          ? "bg-[#E4002B] text-white"
+                          ? "bg-[#E6007E] text-white"
                           : "bg-gray-200 text-gray-600 hover:bg-gray-300"
                       } ${!dispatch ? "disabled:opacity-50 disabled:cursor-not-allowed" : ""}`}
                     >
@@ -129,7 +129,7 @@ export default function DataAddonScreen({
           data-crm-id="apply-addon"
           onClick={() => dispatch?.({ type: "DATA_ADD_ADDON" })}
           disabled={!dispatch}
-          className={`w-full py-2 bg-[#E4002B] text-white rounded font-bold text-xs transition-all ${
+          className={`w-full py-2 bg-[#E6007E] text-white rounded font-bold text-xs transition-all ${
             highlightedElement === "apply-addon" ? "crm-highlight" : ""
           } ${!dispatch ? "disabled:opacity-50 disabled:cursor-not-allowed" : ""}`}
         >

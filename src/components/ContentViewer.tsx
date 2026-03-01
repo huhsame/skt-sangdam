@@ -36,7 +36,7 @@ export default function ContentViewer({ section }: ContentViewerProps) {
         {/* 헤더 */}
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-2">
-            <span className="text-xs font-medium text-white bg-[#E4002B] px-2 py-0.5 rounded">
+            <span className="text-xs font-medium text-white bg-[#E6007E] px-2 py-0.5 rounded">
               {section.filename}
             </span>
             <span className="text-xs text-gray-500">p.{section.page_number}</span>
