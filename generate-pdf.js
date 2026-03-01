@@ -51,7 +51,7 @@ const fullHTML = `<!DOCTYPE html>
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(160deg, #E4002B 0%, #B80025 40%, #8C001D 100%);
+    background: linear-gradient(160deg, #E6007E 0%, #A8005C 40%, #7A003F 100%);
     color: white;
     text-align: center;
     position: relative;
@@ -139,8 +139,8 @@ const fullHTML = `<!DOCTYPE html>
 
   .toc-page h2 {
     font-size: 20pt;
-    color: #E4002B;
-    border-bottom: 3px solid #E4002B;
+    color: #E6007E;
+    border-bottom: 3px solid #E6007E;
     padding-bottom: 4mm;
     margin-bottom: 8mm;
     letter-spacing: 2px;
@@ -188,12 +188,12 @@ const fullHTML = `<!DOCTYPE html>
   h1 {
     font-size: 22pt;
     font-weight: 800;
-    color: #E4002B;
+    color: #E6007E;
     page-break-before: always;
     margin-top: 0;
     padding-top: 15mm;
     padding-bottom: 5mm;
-    border-bottom: 3px solid #E4002B;
+    border-bottom: 3px solid #E6007E;
     margin-bottom: 8mm;
     letter-spacing: 1px;
   }
@@ -250,7 +250,7 @@ const fullHTML = `<!DOCTYPE html>
   }
 
   thead {
-    background: #E4002B;
+    background: #E6007E;
     color: white;
   }
 
@@ -285,7 +285,7 @@ const fullHTML = `<!DOCTYPE html>
   /* 코드 블록 (멘트/스크립트) */
   pre {
     background: #f8f9fa;
-    border-left: 4px solid #E4002B;
+    border-left: 4px solid #E6007E;
     padding: 4mm 5mm;
     margin: 4mm 0;
     border-radius: 0 4px 4px 0;
@@ -393,7 +393,7 @@ const fullHTML = `<!DOCTYPE html>
 
 <!-- 표지 -->
 <div class="cover-page">
-  <div class="cover-logo">TELECOM</div>
+  <div class="cover-logo">LG U+</div>
   <div class="cover-divider"></div>
   <div class="cover-title">고객센터<br>상담 매뉴얼</div>
   <div class="cover-subtitle">모바일 통신 서비스</div>
@@ -401,7 +401,7 @@ const fullHTML = `<!DOCTYPE html>
   <div class="cover-meta">
     <div>버전 2026.02 | 최종 수정일 2026-02-28</div>
     <div>배포 대상: 고객센터 상담원 전원</div>
-    <div style="margin-top: 3mm;">통신사 고객서비스본부</div>
+    <div style="margin-top: 3mm;">LG U+ 고객서비스본부</div>
   </div>
 </div>
 
@@ -537,13 +537,13 @@ ${htmlBody}
     displayHeaderFooter: true,
     headerTemplate: `
       <div style="width: 100%; font-size: 7pt; color: #999; padding: 0 15mm; display: flex; justify-content: space-between; font-family: -apple-system, sans-serif;">
-        <span>통신사 고객센터 상담 매뉴얼</span>
-        <span style="color: #E4002B; font-weight: 600;">대외비</span>
+        <span>LG U+ 고객센터 상담 매뉴얼</span>
+        <span style="color: #E6007E; font-weight: 600;">대외비</span>
       </div>
     `,
     footerTemplate: `
       <div style="width: 100%; font-size: 7pt; color: #999; padding: 0 15mm; display: flex; justify-content: space-between; font-family: -apple-system, sans-serif;">
-        <span>© 2026 통신사</span>
+        <span>© 2026 LG U+</span>
         <span>- <span class="pageNumber"></span> -</span>
         <span>v2026.02</span>
       </div>
