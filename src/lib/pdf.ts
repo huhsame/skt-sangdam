@@ -27,11 +27,12 @@ function ensurePolyfills() {
 async function loadPdfjs() {
   ensurePolyfills();
   const pdfjs = await import("pdfjs-dist/legacy/build/pdf.mjs");
-  // serverless: worker 모듈을 명시적 경로로 지정 (Vercel trace 보장)
+  // serverless: workerSrc는 URL 형식 필수 (path는 'Invalid workerSrc type' 에러)
   const { createRequire } = await import("module");
+  const { pathToFileURL } = await import("url");
   const require = createRequire(import.meta.url);
   const workerPath = require.resolve("pdfjs-dist/legacy/build/pdf.worker.mjs");
-  pdfjs.GlobalWorkerOptions.workerSrc = workerPath;
+  pdfjs.GlobalWorkerOptions.workerSrc = pathToFileURL(workerPath).toString();
   return pdfjs;
 }
 
