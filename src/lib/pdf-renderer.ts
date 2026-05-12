@@ -1,4 +1,9 @@
-import puppeteer, { Browser } from "puppeteer";
+import puppeteer, { type Browser } from "puppeteer-core";
+import chromium from "@sparticuz/chromium-min";
+
+// Vercel/Lambda용 chromium 외부 pack (@sparticuz/chromium-min 148 ↔ Chrome 148)
+const CHROMIUM_PACK_URL =
+  "https://github.com/Sparticuz/chromium/releases/download/v148.0.0/chromium-v148.0.0-pack.x64.tar";
 
 let _browser: Browser | null = null;
 
@@ -6,19 +11,25 @@ async function getBrowser(): Promise<Browser> {
   if (_browser && _browser.connected) {
     return _browser;
   }
-  _browser = await puppeteer.launch({
-    headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"],
-  });
+  if (process.env.VERCEL) {
+    _browser = await puppeteer.launch({
+      args: chromium.args,
+      executablePath: await chromium.executablePath(CHROMIUM_PACK_URL),
+      headless: true,
+    });
+  } else {
+    _browser = await puppeteer.launch({
+      headless: true,
+      executablePath:
+        process.platform === "darwin"
+          ? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          : "/usr/bin/google-chrome",
+      args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"],
+    });
+  }
   return _browser;
 }
 
-/**
- * PDF 페이지를 PNG 이미지 Buffer로 렌더링
- * @param pdfBuffer - PDF 파일의 Buffer
- * @param pageNumber - 렌더링할 페이지 번호 (1-based)
- * @param scale - 렌더링 스케일 (기본 2)
- */
 export async function renderPdfPageToImage(
   pdfBuffer: Buffer,
   pageNumber: number,
@@ -78,9 +89,6 @@ export async function renderPdfPageToImage(
   }
 }
 
-/**
- * 브라우저 인스턴스 정리 (프로세스 종료 시 호출)
- */
 export async function closeBrowser(): Promise<void> {
   if (_browser) {
     await _browser.close();

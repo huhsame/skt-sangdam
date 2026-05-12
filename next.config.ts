@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  serverExternalPackages: ["pdfjs-dist", "puppeteer"],
+  serverExternalPackages: ["pdfjs-dist", "puppeteer-core", "@sparticuz/chromium-min"],
   outputFileTracingIncludes: {
     "/api/upload": ["./node_modules/pdfjs-dist/legacy/build/**"],
   },
