@@ -3,6 +3,8 @@ import { getEmbedding } from "@/lib/openai";
 import { openai } from "@/lib/openai";
 import { getSupabase } from "@/lib/supabase";
 
+const CARRIER = process.env.NEXT_PUBLIC_CARRIER ?? "lguplus";
+
 async function extractKeywords(query: string): Promise<string[]> {
   try {
     const response = await openai.chat.completions.create({
@@ -67,6 +69,7 @@ export async function POST(request: NextRequest) {
       match_threshold: 0.2,
       match_count: 5,
       search_keywords: keywords,
+      carrier_filter: CARRIER,
     });
 
     if (error) {
