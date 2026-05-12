@@ -27,8 +27,14 @@ function ensurePolyfills() {
 async function loadPdfjs() {
   ensurePolyfills();
   const pdfjs = await import("pdfjs-dist/legacy/build/pdf.mjs");
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (pdfjs.GlobalWorkerOptions as any).workerPort = null;
+  // Next.js bundler가 require.resolve를 module ID number로 변환하므로 path 직접 구성
+  const path = await import("node:path");
+  const { pathToFileURL } = await import("node:url");
+  const workerPath = path.join(
+    process.cwd(),
+    "node_modules/pdfjs-dist/legacy/build/pdf.worker.mjs",
+  );
+  pdfjs.GlobalWorkerOptions.workerSrc = pathToFileURL(workerPath).toString();
   return pdfjs;
 }
 
