@@ -9,6 +9,7 @@ export const maxDuration = 300;
 export const runtime = "nodejs";
 
 const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
+const CARRIER = process.env.NEXT_PUBLIC_CARRIER ?? "lguplus";
 
 async function generateCustomerQuestions(pageText: string): Promise<string[]> {
   const prompt = `당신은 통신사 고객센터에 전화하는 고객입니다.
@@ -77,10 +78,15 @@ export async function POST(request: NextRequest) {
           return;
         }
 
-        // 3. documents 테이블에 row 생성
+        // 3. documents 테이블에 row 생성 (carrier는 환경변수 기반)
         const { data: doc, error: docError } = await supabase
           .from("sangdam_documents")
-          .insert({ filename: file.name, total_pages: totalPages, status: "processing" })
+          .insert({
+            filename: file.name,
+            total_pages: totalPages,
+            status: "processing",
+            carrier: CARRIER,
+          })
           .select("id")
           .single();
 
