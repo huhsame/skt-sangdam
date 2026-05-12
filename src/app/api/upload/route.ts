@@ -5,6 +5,9 @@ import { openai, getEmbedding } from "@/lib/openai";
 import { getSupabase } from "@/lib/supabase";
 import { renderPdfPageToImage, closeBrowser } from "@/lib/pdf-renderer";
 
+export const maxDuration = 800;
+export const runtime = "nodejs";
+
 const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
 
 async function generateCustomerQuestions(pageText: string): Promise<string[]> {
