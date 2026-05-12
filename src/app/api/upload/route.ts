@@ -114,9 +114,12 @@ export async function POST(request: NextRequest) {
               imageUrl = urlData.publicUrl;
             } else {
               console.error(`Page ${page.pageNumber} image upload error:`, uploadError.message);
+              send({ type: "image_error", page: page.pageNumber, stage: "upload", message: uploadError.message });
             }
           } catch (err) {
+            const detail = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
             console.error(`Page ${page.pageNumber} image render error:`, err);
+            send({ type: "image_error", page: page.pageNumber, stage: "render", message: detail });
           }
 
           try {
