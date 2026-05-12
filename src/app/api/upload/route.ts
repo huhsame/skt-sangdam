@@ -158,7 +158,8 @@ export async function POST(request: NextRequest) {
         send({ type: "complete", documentId });
       } catch (err) {
         console.error("Upload error:", err);
-        send({ type: "error", message: "업로드 처리 중 오류가 발생했습니다." });
+        const detail = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
+        send({ type: "error", message: `업로드 처리 중 오류: ${detail}` });
       } finally {
         controller.close();
       }
