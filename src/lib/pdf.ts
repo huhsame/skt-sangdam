@@ -27,11 +27,13 @@ function ensurePolyfills() {
 async function loadPdfjs() {
   ensurePolyfills();
   const pdfjs = await import("pdfjs-dist/legacy/build/pdf.mjs");
-  // serverless: workerSrc는 URL 형식 필수 (path는 'Invalid workerSrc type' 에러)
-  const { createRequire } = await import("module");
-  const { pathToFileURL } = await import("url");
-  const require = createRequire(import.meta.url);
-  const workerPath = require.resolve("pdfjs-dist/legacy/build/pdf.worker.mjs");
+  // Next.js bundler가 require.resolve를 module ID number로 변환하므로 path 직접 구성
+  const path = await import("node:path");
+  const { pathToFileURL } = await import("node:url");
+  const workerPath = path.join(
+    process.cwd(),
+    "node_modules/pdfjs-dist/legacy/build/pdf.worker.mjs",
+  );
   pdfjs.GlobalWorkerOptions.workerSrc = pathToFileURL(workerPath).toString();
   return pdfjs;
 }
