@@ -27,6 +27,8 @@ function ensurePolyfills() {
 async function loadPdfjs() {
   ensurePolyfills();
   const pdfjs = await import("pdfjs-dist/legacy/build/pdf.mjs");
+  // serverless 환경: fake worker 로딩 막고 main thread에서 직접 실행
+  pdfjs.GlobalWorkerOptions.workerSrc = "";
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   (pdfjs.GlobalWorkerOptions as any).workerPort = null;
   return pdfjs;
