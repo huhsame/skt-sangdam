@@ -5,7 +5,7 @@ import { openai, getEmbedding } from "@/lib/openai";
 import { getSupabase } from "@/lib/supabase";
 import { renderPdfPageToImage, closeBrowser } from "@/lib/pdf-renderer";
 
-export const maxDuration = 800;
+export const maxDuration = 300;
 export const runtime = "nodejs";
 
 const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
@@ -95,60 +95,62 @@ export async function POST(request: NextRequest) {
         // 4. 각 페이지 처리
         const pdfBuffer = Buffer.from(bytes);
 
-        for (let i = 0; i < pages.length; i++) {
-          const page = pages[i];
-
-          // 이미지 렌더링 → Storage 업로드
-          let imageUrl: string | null = null;
-          try {
-            const pngBuffer = await renderPdfPageToImage(pdfBuffer, page.pageNumber);
-            const storagePath = `${documentId}/page-${page.pageNumber}.png`;
-            const { error: uploadError } = await supabase.storage
-              .from("sangdam-page-images")
-              .upload(storagePath, pngBuffer, {
-                contentType: "image/png",
-                upsert: true,
-              });
-
-            if (!uploadError) {
-              const { data: urlData } = supabase.storage
+        // 페이지 처리: 이미지 렌더와 (질문 생성 + 임베딩)을 페이지 내에서 병렬화
+        async function processPage(page: { pageNumber: number; text: string }) {
+          const imagePromise = (async () => {
+            try {
+              const pngBuffer = await renderPdfPageToImage(pdfBuffer, page.pageNumber);
+              const storagePath = `${documentId}/page-${page.pageNumber}.png`;
+              const { error: uploadError } = await supabase.storage
                 .from("sangdam-page-images")
-                .getPublicUrl(storagePath);
-              imageUrl = urlData.publicUrl;
-            } else {
-              console.error(`Page ${page.pageNumber} image upload error:`, uploadError.message);
-              send({ type: "image_error", page: page.pageNumber, stage: "upload", message: uploadError.message });
+                .upload(storagePath, pngBuffer, {
+                  contentType: "image/png",
+                  upsert: true,
+                });
+              if (uploadError) {
+                console.error(`Page ${page.pageNumber} upload:`, uploadError.message);
+                send({ type: "image_error", page: page.pageNumber, stage: "upload", message: uploadError.message });
+                return null;
+              }
+              return supabase.storage.from("sangdam-page-images").getPublicUrl(storagePath).data.publicUrl;
+            } catch (err) {
+              const detail = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
+              console.error(`Page ${page.pageNumber} render:`, err);
+              send({ type: "image_error", page: page.pageNumber, stage: "render", message: detail });
+              return null;
             }
-          } catch (err) {
-            const detail = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
-            console.error(`Page ${page.pageNumber} image render error:`, err);
-            send({ type: "image_error", page: page.pageNumber, stage: "render", message: detail });
-          }
+          })();
 
-          try {
-            // GPT로 고객 질문 생성
+          const textPromise = (async () => {
             const questions = await generateCustomerQuestions(page.text);
-
-            // 임베딩 텍스트 조합
             const embeddingText = buildPageEmbeddingText(page.text, questions);
+            return getEmbedding(embeddingText);
+          })();
 
-            // 임베딩 생성
-            const embedding = await getEmbedding(embeddingText);
+          const [imageUrl, embedding] = await Promise.all([imagePromise, textPromise]);
 
-            // document_pages에 삽입 (image_url 포함)
-            await supabase.from("sangdam_document_pages").insert({
-              document_id: documentId,
-              page_number: page.pageNumber,
-              content: page.text,
-              embedding,
-              image_url: imageUrl,
-            });
-          } catch (err) {
-            console.error(`Page ${page.pageNumber} processing error:`, err);
+          await supabase.from("sangdam_document_pages").insert({
+            document_id: documentId,
+            page_number: page.pageNumber,
+            content: page.text,
+            embedding,
+            image_url: imageUrl,
+          });
+        }
+
+        // 페이지 간에도 작은 배치(4개씩) 병렬로 처리해 wall-time 단축
+        const BATCH = 4;
+        let processed = 0;
+        for (let i = 0; i < pages.length; i += BATCH) {
+          const slice = pages.slice(i, i + BATCH);
+          const results = await Promise.allSettled(slice.map(processPage));
+          for (const r of results) {
+            processed += 1;
+            if (r.status === "rejected") {
+              console.error("Page processing error:", r.reason);
+            }
+            send({ type: "progress", current: processed, total: pages.length });
           }
-
-          // 진행률 전송
-          send({ type: "progress", current: i + 1, total: pages.length });
         }
 
         // 5. Puppeteer 브라우저 정리
