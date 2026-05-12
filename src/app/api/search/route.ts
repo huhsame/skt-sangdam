@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
       extractKeywords(trimmed),
     ]);
 
-    const { data, error } = await getSupabase().rpc("match_pages", {
+    const { data, error } = await getSupabase().rpc("match_sangdam_pages", {
       query_embedding: embedding,
       match_threshold: 0.2,
       match_count: 5,

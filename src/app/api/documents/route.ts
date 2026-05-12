@@ -4,7 +4,7 @@ export async function GET() {
   const supabase = getSupabase();
 
   const { data, error } = await supabase
-    .from("documents")
+    .from("sangdam_documents")
     .select("id, filename, total_pages, uploaded_at, status")
     .order("uploaded_at", { ascending: false });
 

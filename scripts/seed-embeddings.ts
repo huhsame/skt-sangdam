@@ -106,7 +106,7 @@ async function main() {
 
   // 2. documents 테이블에 row 생성
   const { data: doc, error: docError } = await supabase
-    .from("documents")
+    .from("sangdam_documents")
     .insert({ filename, total_pages: totalPages, status: "processing" })
     .select("id")
     .single();
@@ -138,7 +138,7 @@ async function main() {
     const embedding = await getEmbedding(embeddingText);
 
     // document_pages에 삽입
-    const { error: insertError } = await supabase.from("document_pages").insert({
+    const { error: insertError } = await supabase.from("sangdam_document_pages").insert({
       document_id: documentId,
       page_number: page.pageNumber,
       content: page.text,
@@ -157,7 +157,7 @@ async function main() {
 
   // 4. documents.status를 'ready'로 업데이트
   await supabase
-    .from("documents")
+    .from("sangdam_documents")
     .update({ status: "ready" })
     .eq("id", documentId);
 

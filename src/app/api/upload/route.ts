@@ -76,7 +76,7 @@ export async function POST(request: NextRequest) {
 
         // 3. documents 테이블에 row 생성
         const { data: doc, error: docError } = await supabase
-          .from("documents")
+          .from("sangdam_documents")
           .insert({ filename: file.name, total_pages: totalPages, status: "processing" })
           .select("id")
           .single();
@@ -101,7 +101,7 @@ export async function POST(request: NextRequest) {
             const pngBuffer = await renderPdfPageToImage(pdfBuffer, page.pageNumber);
             const storagePath = `${documentId}/page-${page.pageNumber}.png`;
             const { error: uploadError } = await supabase.storage
-              .from("page-images")
+              .from("sangdam-page-images")
               .upload(storagePath, pngBuffer, {
                 contentType: "image/png",
                 upsert: true,
@@ -109,7 +109,7 @@ export async function POST(request: NextRequest) {
 
             if (!uploadError) {
               const { data: urlData } = supabase.storage
-                .from("page-images")
+                .from("sangdam-page-images")
                 .getPublicUrl(storagePath);
               imageUrl = urlData.publicUrl;
             } else {
@@ -130,7 +130,7 @@ export async function POST(request: NextRequest) {
             const embedding = await getEmbedding(embeddingText);
 
             // document_pages에 삽입 (image_url 포함)
-            await supabase.from("document_pages").insert({
+            await supabase.from("sangdam_document_pages").insert({
               document_id: documentId,
               page_number: page.pageNumber,
               content: page.text,
@@ -150,7 +150,7 @@ export async function POST(request: NextRequest) {
 
         // 6. documents.status를 'ready'로 업데이트
         await supabase
-          .from("documents")
+          .from("sangdam_documents")
           .update({ status: "ready" })
           .eq("id", documentId);
 
